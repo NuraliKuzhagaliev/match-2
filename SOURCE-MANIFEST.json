@@ -12,16 +12,16 @@
       "sha256": "f9446a95d51e6c8b4211f5c12525053305f6c9c0ebb77fda1d2ba97ce7ff1afb"
     },
     "README.md": {
-      "bytes": 427,
-      "sha256": "135d479f5d0541e0d45e6218b1cecc5c76cc43bb394f56d2c839672fb47c39f1"
+      "bytes": 3925,
+      "sha256": "652cd16667ee33d353ef5de45a17d05b1da64f7e70c4dfd364437c7ec45b9616"
     },
     "competition/Dockerfile": {
       "bytes": 1884,
       "sha256": "b85c67655066b34e3def1ffd98e62ffe27d66995be12f98e63052e337a14769f"
     },
     "competition/README.md": {
-      "bytes": 17331,
-      "sha256": "03bf8f6183c45f61aedc0499121eeed71e5d0ced2d300a0a6aab39183a453fd0"
+      "bytes": 17445,
+      "sha256": "a1ab8c92db49e93b127ebd7dec425f4330929f0fb6ac2a6a69ae17400dfea636"
     },
     "competition/__init__.py": {
       "bytes": 76,
