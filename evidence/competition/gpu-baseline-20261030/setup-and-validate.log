@@ -1,0 +1,119 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting transformers==4.57.6 (from -r competition/requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/03/b8/e484ef633af3887baeeb4b6ad12743363af7cce68ae51e938e00aaa0529d/transformers-4.57.6-py3-none-any.whl (12.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 33.0 MB/s eta 0:00:00
+Collecting accelerate==1.12.0 (from -r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9f/d2/c581486aa6c4fbd7394c23c47b83fa1a919d34194e16944241daf9e762dd/accelerate-1.12.0-py3-none-any.whl (380 kB)
+Collecting huggingface-hub==0.36.0 (from -r competition/requirements.txt (line 4))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/cb/bd/1a875e0d592d447cbc02805fd3fe0f497714d6a2583f59d14fa9ebad96eb/huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 630.9 MB/s eta 0:00:00
+Collecting safetensors==0.7.0 (from -r competition/requirements.txt (line 5))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/60/429e9b1cb3fc651937727befe258ea24122d9663e4d5709a48c9cbfceecb/safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (507 kB)
+Collecting Pillow==12.1.1 (from -r competition/requirements.txt (line 6))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/ee/c85a38a9ab92037a75615aba572c85ea51e605265036e00c5b67dfafbfe2/pillow-12.1.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 96.3 MB/s eta 0:00:00
+Collecting filelock (from transformers==4.57.6->-r competition/requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl (162 kB)
+Collecting numpy>=1.17 (from transformers==4.57.6->-r competition/requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/16/d5/928078d2b28f26829b138b4a6c3980045022fb409f570657a224ae60ef4e/numpy-2.5.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 65.2 MB/s eta 0:00:00
+Requirement already satisfied: packaging>=20.0 in /opt/amd-oneclick-runtime/notebook-python (from transformers==4.57.6->-r competition/requirements.txt (line 2)) (26.3)
+Requirement already satisfied: pyyaml>=5.1 in /opt/amd-oneclick-runtime/notebook-python (from transformers==4.57.6->-r competition/requirements.txt (line 2)) (6.0.3)
+Collecting regex!=2019.12.17 (from transformers==4.57.6->-r competition/requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a9/4d/041d9458a645fee4fce4d642a89d27271a3cfcd91095104f6dde44da70bf/regex-2026.9.29-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.2/807.2 kB 157.1 MB/s eta 0:00:00
+Requirement already satisfied: requests in /opt/amd-oneclick-runtime/notebook-python (from transformers==4.57.6->-r competition/requirements.txt (line 2)) (2.34.2)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers==4.57.6->-r competition/requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2e/76/932be4b50ef6ccedf9d3c6639b056a967a86258c6d9200643f01269211ca/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 276.3 MB/s eta 0:00:00
+Collecting tqdm>=4.27 (from transformers==4.57.6->-r competition/requirements.txt (line 2))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub==0.36.0->-r competition/requirements.txt (line 4))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6c/c0/a98505f18594f1bce828bb159cec0fcf9860562f1a2c85913409fc8f3d9e/fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /opt/amd-oneclick-runtime/notebook-python (from huggingface-hub==0.36.0->-r competition/requirements.txt (line 4)) (4.16.0)
+Collecting hf-xet<2.0.0,>=1.1.3 (from huggingface-hub==0.36.0->-r competition/requirements.txt (line 4))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f8/1e/1e8ecc05ef034e9a95c18ed32d2ec07905a7cd2ca611a9d88e25ee1f4850/hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 70.2 MB/s eta 0:00:00
+Requirement already satisfied: psutil in /opt/amd-oneclick-runtime/notebook-python (from accelerate==1.12.0->-r competition/requirements.txt (line 3)) (7.2.2)
+Collecting torch>=2.0.0 (from accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/76/c6/22c2102bbef14ca6a6cb4c20e42f088e49c5f812be4e160ae57502e325f9/torch-2.13.0-cp314-cp314-manylinux_2_28_x86_64.whl (526.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 526.6/526.6 MB 68.8 MB/s eta 0:00:00
+Requirement already satisfied: setuptools>=77.0.3 in /usr/lib/python3/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3)) (78.1.1)
+Collecting sympy>=1.13.3 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl (6.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 105.0 MB/s eta 0:00:00
+Collecting networkx>=2.5.1 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7e/cd/fe58041e9011f307c490e3e17dd48cc516448f7c698a3f2d9d9d65d7e6a8/networkx-3.7-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 218.4 MB/s eta 0:00:00
+Requirement already satisfied: jinja2 in /opt/amd-oneclick-runtime/notebook-python (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3)) (3.1.6)
+Collecting cuda-toolkit==13.0.3 (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d1/c7/a79086a62c98befcdb8349656c6f114e2db3b8b2422f6e25c97a7f2a9a3c/cuda_toolkit-13.0.3.0-py2.py3-none-any.whl (2.5 kB)
+Collecting cuda-bindings<14,>=13.0.3 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/15/65/0b8f2f2509e5f1a8e556a2e083ac0287fe4af79afdba3153454229306f39/cuda_bindings-13.4.4-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 103.7 MB/s eta 0:00:00
+Collecting nvidia-cudnn-cu13==9.20.0.48 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6e/5e/edb9c0ae051602c3ccaffe424256463636d639e27d7f302dde9975ef9e7a/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl (366.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 366.2/366.2 MB 60.6 MB/s eta 0:00:00
+Collecting nvidia-cusparselt-cu13==0.8.1 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/34/7d/2661f2fb3ac4302f3a246f5fc030213ac60c1fe0bce84f9783dbd831dbb7/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl (170.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 170.1/170.1 MB 63.5 MB/s eta 0:00:00
+Collecting nvidia-nccl-cu13==2.29.7 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/67/f4/58e4e91b6919367c7aafb8e36fce9aad1a3047e536bf7e2fd560927d3a4c/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl (206.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.0/206.0 MB 64.0 MB/s eta 0:00:00
+Collecting nvidia-nvshmem-cu13==3.4.5 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3c/35/a9bf80a609e74e3b000fef598933235c908fcefcef9026042b8e6dfde2a9/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (60.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 MB 74.3 MB/s eta 0:00:00
+Collecting triton==3.7.1 (from torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a4/09/5683146fda6a2b569deb78ccfd8fbfea8bfe55f726b081c0a6bb18dd6f28/triton-3.7.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (197.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 197.7/197.7 MB 73.1 MB/s eta 0:00:00
+Collecting nvidia-cublas==13.1.1.3.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3b/cd/154ca20c38269e05eff77c1464e6c1da89f50a6390b565e9d82e06bc11e1/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl (423.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 423.1/423.1 MB 69.0 MB/s eta 0:00:00
+Collecting nvidia-cuda-nvrtc==13.0.88.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c3/68/483a78f5e8f31b08fb1bb671559968c0ca3a065ac7acabfc7cee55214fd6/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (90.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.2/90.2 MB 75.6 MB/s eta 0:00:00
+Collecting nvidia-cuda-runtime==13.0.96.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2e/24/d1558f3b68b1d26e706813b1d10aa1d785e4698c425af8db8edc3dced472/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 227.8 MB/s eta 0:00:00
+Collecting nvidia-cufft==12.0.0.61.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a8/2f/7b57e29836ea8714f81e9898409196f47d772d5ddedddf1592eadb8ab743/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (214.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.1/214.1 MB 62.6 MB/s eta 0:00:00
+Collecting nvidia-nvjitlink<14,>=13.0.88 (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1d/6b/eef7a9e32872b8f41e145bf10cddc9af26e153c338852811fe9a9baddf9e/nvidia_nvjitlink-13.4.92-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (42.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.5/42.5 MB 74.4 MB/s eta 0:00:00
+Collecting nvidia-cufile==1.15.1.6.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3f/70/4f193de89a48b71714e74602ee14d04e4019ad36a5a9f20c425776e72cd6/nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 142.5 MB/s eta 0:00:00
+Collecting nvidia-cuda-cupti==13.0.85.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/33/6d/737d164b4837a9bbd202f5ae3078975f0525a55730fe871d8ed4e3b952b0/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl (10.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 81.4 MB/s eta 0:00:00
+Collecting nvidia-curand==10.4.0.35.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a5/9f/be0a41ca4a4917abf5cb9ae0daff1a6060cc5de950aec0396de9f3b52bc5/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl (59.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.5/59.5 MB 64.4 MB/s eta 0:00:00
+Collecting nvidia-cusolver==12.0.4.66.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5f/67/cba3777620cdacb99102da4042883709c41c709f4b6323c10781a9c3aa34/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl (200.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.9/200.9 MB 58.5 MB/s eta 0:00:00
+Collecting nvidia-cusparse==12.6.3.3.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fa/18/623c77619c31d62efd55302939756966f3ecc8d724a14dab2b75f1508850/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (145.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 145.9/145.9 MB 65.4 MB/s eta 0:00:00
+Collecting nvidia-nvtx==13.0.85.* (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c2/f3/d86c845465a2723ad7e1e5c36dcd75ddb82898b3f53be47ebd429fb2fa5d/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl (148 kB)
+Collecting cuda-pathfinder>=1.4.2 (from cuda-bindings<14,>=13.0.3->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3d/b1/88f9aa5052f6d69afc4507763517b84872a76d3f7644edddca8bb4e3729a/cuda_pathfinder-1.8.5-py3-none-any.whl (62 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 331.4 MB/s eta 0:00:00
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/amd-oneclick-runtime/notebook-python (from jinja2->torch>=2.0.0->accelerate==1.12.0->-r competition/requirements.txt (line 3)) (3.0.4)
+Requirement already satisfied: charset_normalizer<4,>=2 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r competition/requirements.txt (line 2)) (3.5.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r competition/requirements.txt (line 2)) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r competition/requirements.txt (line 2)) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r competition/requirements.txt (line 2)) (2026.10.23)
+Installing collected packages: nvidia-cusparselt-cu13, mpmath, cuda-toolkit, triton, tqdm, sympy, safetensors, regex, Pillow, nvidia-nvtx, nvidia-nvshmem-cu13, nvidia-nvjitlink, nvidia-nccl-cu13, nvidia-curand, nvidia-cufile, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cuda-cupti, numpy, networkx, hf-xet, fsspec, filelock, cuda-pathfinder, nvidia-cusparse, nvidia-cufft, nvidia-cublas, huggingface-hub, cuda-bindings, tokenizers, nvidia-cusolver, nvidia-cudnn-cu13, transformers, torch, accelerate
+
+Successfully installed Pillow-12.1.1 accelerate-1.12.0 cuda-bindings-13.4.4 cuda-pathfinder-1.8.5 cuda-toolkit-13.0.3.0 filelock-4.2.4 fsspec-2026.9.0 hf-xet-1.8.0 huggingface-hub-0.36.0 mpmath-1.3.0 networkx-3.7 numpy-2.5.4 nvidia-cublas-13.1.1.3 nvidia-cuda-cupti-13.0.85 nvidia-cuda-nvrtc-13.0.88 nvidia-cuda-runtime-13.0.96 nvidia-cudnn-cu13-9.20.0.48 nvidia-cufft-12.0.0.61 nvidia-cufile-1.15.1.6 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.4.66 nvidia-cusparse-12.6.3.3 nvidia-cusparselt-cu13-0.8.1 nvidia-nccl-cu13-2.29.7 nvidia-nvjitlink-13.4.92 nvidia-nvshmem-cu13-3.4.5 nvidia-nvtx-13.0.85 regex-2026.9.29 safetensors-0.7.0 sympy-1.14.0 tokenizers-0.22.2 torch-2.13.0 tqdm-4.70.1 transformers-4.57.6 triton-3.7.1
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]/workspace/visionforge-match2/.venv/lib/python3.14/site-packages/huggingface_hub/file_download.py:798: UserWarning: Not enough free disk space to download the file. The expected file size is: 4255.14 MB. The target location /workspace/visionforge-match2/models/qwen3-vl-2b/.cache/huggingface/download only has 2842.69 MB free disk space.
+  warnings.warn(
+/workspace/visionforge-match2/.venv/lib/python3.14/site-packages/huggingface_hub/file_download.py:798: UserWarning: Not enough free disk space to download the file. The expected file size is: 4255.14 MB. The target location /workspace/visionforge-match2/models/qwen3-vl-2b only has 2842.69 MB free disk space.
+  warnings.warn(
+Fetching 10 files:  80%|████████  | 8/10 [00:01<00:00,  4.42it/s]Fetching 10 files:  90%|█████████ | 9/10 [00:20<00:02,  2.22s/it]/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-w3s_d1oy'}
+  warnings.warn(

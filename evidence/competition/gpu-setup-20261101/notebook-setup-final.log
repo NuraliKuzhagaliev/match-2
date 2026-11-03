@@ -1,0 +1,185 @@
+2.13.0+rocm10.0.0 /opt/venv/lib/python3.14/site-packages/torch/__init__.py
+Collecting transformers==4.57.6 (from -r /workspace/visionforge-match2/competition/requirements.txt (line 2))
+  Downloading transformers-4.57.6-py3-none-any.whl.metadata (43 kB)
+Collecting accelerate==1.12.0 (from -r /workspace/visionforge-match2/competition/requirements.txt (line 3))
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Collecting huggingface-hub==0.36.0 (from -r /workspace/visionforge-match2/competition/requirements.txt (line 4))
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Collecting safetensors==0.7.0 (from -r /workspace/visionforge-match2/competition/requirements.txt (line 5))
+  Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting Pillow==12.1.1 (from -r /workspace/visionforge-match2/competition/requirements.txt (line 6))
+  Downloading pillow-12.1.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Requirement already satisfied: filelock in /opt/venv/lib/python3.14/site-packages (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (3.32.3)
+Requirement already satisfied: numpy>=1.17 in /opt/venv/lib/python3.14/site-packages (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (2.5.2)
+Requirement already satisfied: packaging>=20.0 in /opt/amd-oneclick-runtime/notebook-python (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (26.3)
+Requirement already satisfied: pyyaml>=5.1 in /opt/amd-oneclick-runtime/notebook-python (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (6.0.3)
+Collecting regex!=2019.12.17 (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2))
+  Downloading regex-2026.9.29-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Requirement already satisfied: requests in /opt/amd-oneclick-runtime/notebook-python (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (2.34.2)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2))
+  Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Requirement already satisfied: tqdm>=4.27 in /opt/venv/lib/python3.14/site-packages (from transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (4.70.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /opt/venv/lib/python3.14/site-packages (from huggingface-hub==0.36.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 4)) (2026.7.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /opt/amd-oneclick-runtime/notebook-python (from huggingface-hub==0.36.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 4)) (4.16.0)
+Collecting hf-xet<2.0.0,>=1.1.3 (from huggingface-hub==0.36.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 4))
+  Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Requirement already satisfied: psutil in /opt/amd-oneclick-runtime/notebook-python (from accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (7.2.2)
+Requirement already satisfied: torch>=2.0.0 in /opt/venv/lib/python3.14/site-packages (from accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (2.13.0+rocm10.0.0)
+Requirement already satisfied: setuptools>=77.0.3 in /opt/venv/lib/python3.14/site-packages (from torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (84.0.0)
+Requirement already satisfied: sympy>=1.13.3 in /opt/venv/lib/python3.14/site-packages (from torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /opt/venv/lib/python3.14/site-packages (from torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (3.6.1)
+Requirement already satisfied: jinja2 in /opt/amd-oneclick-runtime/notebook-python (from torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (3.1.6)
+Requirement already satisfied: rocm==10.0.0 in /opt/venv/lib/python3.14/site-packages (from rocm[libraries]==10.0.0->torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (10.0.0)
+Requirement already satisfied: triton==3.8.0+git4cff872c.rocm10.0.0 in /opt/venv/lib/python3.14/site-packages (from torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (3.8.0+git4cff872c.rocm10.0.0)
+Requirement already satisfied: rocm-bootstrap in /opt/venv/lib/python3.14/site-packages (from torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (0.1.0)
+Requirement already satisfied: rocm-sdk-core==10.0.0 in /opt/venv/lib/python3.14/site-packages (from rocm==10.0.0->rocm[libraries]==10.0.0->torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (10.0.0)
+Requirement already satisfied: rocm-sdk-libraries==10.0.0 in /opt/venv/lib/python3.14/site-packages (from rocm[libraries]==10.0.0->torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (10.0.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/venv/lib/python3.14/site-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/amd-oneclick-runtime/notebook-python (from jinja2->torch>=2.0.0->accelerate==1.12.0->-r /workspace/visionforge-match2/competition/requirements.txt (line 3)) (3.0.4)
+Requirement already satisfied: charset_normalizer<4,>=2 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (3.5.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in /opt/amd-oneclick-runtime/notebook-python (from requests->transformers==4.57.6->-r /workspace/visionforge-match2/competition/requirements.txt (line 2)) (2026.10.23)
+Downloading transformers-4.57.6-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 9.8 MB/s eta 0:00:00
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 114.3 MB/s eta 0:00:00
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (507 kB)
+Downloading pillow-12.1.1-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 27.2 MB/s eta 0:00:00
+Downloading hf_xet-1.8.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 18.1 MB/s eta 0:00:00
+Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 108.1 MB/s eta 0:00:00
+Downloading regex-2026.9.29-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.2/807.2 kB 109.7 MB/s eta 0:00:00
+Installing collected packages: safetensors, regex, Pillow, hf-xet, huggingface-hub, tokenizers, transformers, accelerate
+  Attempting uninstall: Pillow
+    Found existing installation: pillow 12.3.0
+    Not uninstalling pillow at /opt/venv/lib/python3.14/site-packages, outside environment /workspace/visionforge-match2/.amd-venv
+    Can't uninstall 'pillow'. No files were found to uninstall.
+
+Successfully installed Pillow-12.1.1 accelerate-1.12.0 hf-xet-1.8.0 huggingface-hub-0.36.0 regex-2026.9.29 safetensors-0.7.0 tokenizers-0.22.2 transformers-4.57.6
+2.13.0+rocm10.0.0 /opt/venv/lib/python3.14/site-packages/torch/__init__.py
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 819.62it/s]
+{"model": "Qwen/Qwen3-VL-2B-Instruct", "revision": "89644892e4d85e24eaac8bacfd4f463576704203", "weight_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0"}
+/workspace/visionforge-match2/.amd-venv/lib/python3.14/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+{"check": "processor_only", "status": "PASS", "torch": "2.13.0+rocm10.0.0", "torchvision": "0.28.0+rocm10.0.0", "transformers": "4.57.6", "gpu_inference_tested": false}
+{
+  "status": "SETUP_COMPLETE",
+  "base_runtime_preserved": {
+    "torch": "2.13.0+rocm10.0.0",
+    "torch_file": "/opt/venv/lib/python3.14/site-packages/torch/__init__.py",
+    "hip": "7.15.26333",
+    "gpu": "AMD Radeon Pro W7900D",
+    "base_site": "/opt/venv/lib/python3.14/site-packages"
+  },
+  "venv": "/workspace/visionforge-match2/.amd-venv"
+}
+{"event": "case", "file": "us_clean.png", "expected": "8MQZ204", "input_sha256": "958238c2c15bc07caa727f4ad3327d22e5a4475237dfc17f44e2dd29c00749b4", "seconds": 0.2835799609310925, "exit_code": 0, "output": {"text": "8MQZ204"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "us_angled.jpg", "expected": "7LPN684", "input_sha256": "3dbf82c26b184e8dd599ff987920ba750e6262db48b63611c71e45fadf2d1836", "seconds": 0.2609276329167187, "exit_code": 0, "output": {"text": "7LPN684"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "chinese_clean.png", "expected": "\u7ca4C\u00b760983", "input_sha256": "330ae7bcfbdd3c8f26cabc2adf0e1fdc56f222253045d5c1b7f09a04395d10d6", "seconds": 0.29251990327611566, "exit_code": 0, "output": {"text": "\u7ca4C\u00b760983"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "chinese_glare.jpg", "expected": "\u6d59D\u00b760609", "input_sha256": "e8f965a50ca304648694b533e231053775db41588c2d4adbb7220c829e640203", "seconds": 0.2905926378443837, "exit_code": 0, "output": {"text": "\u6d59D\u00b760609"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "stop_clean.png", "expected": "STOP", "input_sha256": "41ebbb41256a722164e8a4d72d1b5d8c341d52de5f1c458ca967721bd9dcad12", "seconds": 0.31170560605823994, "exit_code": 0, "output": {"text": "STOP"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "stop_noise.tiff", "expected": "STOP", "input_sha256": "be73f2815d4b2fe46c4aa886b8dd69a318762d2f7d5513182899c7059ddbcd20", "seconds": 0.32590773794800043, "exit_code": 0, "output": {"text": "STOP"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "speed.jpg", "expected": "SPEED LIMIT 45", "input_sha256": "9cc98a24c02dc6e45e7372785044ca428ed549f36a366e84a3061cd282fe0d6a", "seconds": 0.6107526989653707, "exit_code": 0, "output": {"text": "SPEED LIMIT 45"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "warning.png", "expected": "LANE CLOSED AHEAD", "input_sha256": "3513e3ccc8a0fbd1787a070b47c12af1e9b3ae6bc50b6c3ea8afe38422f8252d", "seconds": 0.5838201139122248, "exit_code": 0, "output": {"text": "LANE CLOSED AHEAD"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "advisory.tiff", "expected": "25", "input_sha256": "8dab8cbca2633ad84c5393fae955bbf2652693f946454e76c0207be947448eb7", "seconds": 0.2402855111286044, "exit_code": 0, "output": {"text": "25"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "us_blur.png", "expected": "4VNK708", "input_sha256": "f3d898107fa915d164932ef46740dea4e62983b49627a2ff520f90290abaec31", "seconds": 0.2763213962316513, "exit_code": 0, "output": {"text": "4VNK708"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{
+  "decision": "direct_runtime_passed_container_unverified",
+  "gates": [
+    {
+      "id": "docker_build_layers_size",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "startup",
+      "status": "PASS",
+      "detail": 12.0049834321253
+    },
+    {
+      "id": "rocm_runtime",
+      "status": "PASS",
+      "detail": {
+        "ok": true,
+        "request_id": "d14b3f40b53a480199da61be3f3fb930",
+        "ready": true,
+        "backend": "rocm",
+        "hip_version": "7.15.26333",
+        "torch_version": "2.13.0+rocm10.0.0",
+        "gpu": "AMD Radeon Pro W7900D",
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "weight_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+        "parameter_bytes": 4255064064,
+        "dtype": "float16",
+        "attention": "sdpa",
+        "preprocessing": "full-scene-plus-optional-contrast-view",
+        "memory": {
+          "allocated_bytes": 4334771712,
+          "reserved_bytes": 4448059392,
+          "driver_used_bytes": 4972871680,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4395478016,
+          "max_reserved_bytes": 4448059392
+        },
+        "model_loads": 1,
+        "startup_seconds": 11.429332714062184,
+        "pid": 1339,
+        "ready_monotonic_seconds": 4108064.785174491,
+        "checked_monotonic_seconds": 4108065.298771311
+      }
+    },
+    {
+      "id": "independent_sampler_started",
+      "status": "PASS",
+      "detail": "Separate ROCm sampler must be ready and alive"
+    },
+    {
+      "id": "single_model_load",
+      "status": "PASS",
+      "detail": 1339
+    },
+    {
+      "id": "output_contract",
+      "status": "PASS",
+      "detail": "Ten CLI calls with actual model outputs"
+    },
+    {
+      "id": "per_image_runtime",
+      "status": "PASS",
+      "detail": "Whole CLI <=30 seconds"
+    },
+    {
+      "id": "total_runtime",
+      "status": "PASS",
+      "detail": 3.4854953680187464
+    },
+    {
+      "id": "local_exact_match",
+      "status": "PASS",
+      "detail": "Synthetic local regression; not hidden contest accuracy"
+    },
+    {
+      "id": "independent_sampler_coverage",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "status": {
+          "status": "COMPLETE",
+          "pid": 1338,
+          "samples": 5
+        }
+      }
+    },
+    {
+      "id": "vram",
+      "status": "PASS",
+      "detail": 5142740992
+    }
+  ],
+  "report": "evidence/competition/notebook-acceptance.json"
+}

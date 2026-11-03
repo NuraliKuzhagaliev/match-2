@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-31T23:36:59.051685+00:00",
+  "source_file": "AMD AI League — Match 1 & 2 Challenge Brief (2).pdf",
+  "source_sha256": "6eec89109e4c3e04cb32b38b80c03fdeb1cb307802373fbf00492bfc10a343c3",
+  "contract_review": "PASS",
+  "container_lifecycle": {
+    "pages": [
+      5,
+      6
+    ],
+    "facts": [
+      "CLI runs inside an already-running container",
+      "Model must be loaded once, not per image"
+    ],
+    "resident_worker_consistent": true
+  },
+  "submission": {
+    "page": 8,
+    "required_artifact": "Publicly pullable container image reference",
+    "registry_credentials_for_grader": false,
+    "advertise_or_commit_real_image_reference_to_public_repository": false
+  },
+  "organizer_grader_executed": false,
+  "amd_gpu_execution_inside_docker": "NOT_RUN"
+}

@@ -1,0 +1,275 @@
+{
+  "prompt": "Read every visible word and number on the main road sign or license plate. Include every line. Return the transcription only, in top-to-bottom and left-to-right order. For license plates return only the registration number, omitting surrounding state names and slogans. Preserve a Chinese province character and its following letter. Do not invent or correct characters.",
+  "rows": [
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "us_clean.png",
+      "expected": "8MQZ204",
+      "actual": "OREGON 8MQZ204 PACIFIC WONDERLAND",
+      "match": false,
+      "seconds": 2.9230558425188065
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "us_angled.jpg",
+      "expected": "7LPN684",
+      "actual": "7LPN684",
+      "match": true,
+      "seconds": 0.20355067774653435
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "chinese_clean.png",
+      "expected": "\u7ca4C\u00b760983",
+      "actual": "\u7ca4C\u00b760983",
+      "match": true,
+      "seconds": 0.23485785163939
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "chinese_glare.jpg",
+      "expected": "\u6d59D\u00b760609",
+      "actual": "\u6d59D\u00b760609",
+      "match": true,
+      "seconds": 0.22886558435857296
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "stop_clean.png",
+      "expected": "STOP",
+      "actual": "STOP",
+      "match": true,
+      "seconds": 0.10601687990128994
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "stop_noise.tiff",
+      "expected": "STOP",
+      "actual": "STOP",
+      "match": true,
+      "seconds": 0.10178722627460957
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "speed.jpg",
+      "expected": "SPEED LIMIT 45",
+      "actual": "SPEED LIMIT 45",
+      "match": true,
+      "seconds": 0.2636593896895647
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "warning.png",
+      "expected": "LANE CLOSED AHEAD",
+      "actual": "A L N E o r e A L N E",
+      "match": false,
+      "seconds": 0.38787298649549484
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "advisory.tiff",
+      "expected": "25",
+      "actual": "25",
+      "match": true,
+      "seconds": 0.11265808902680874
+    },
+    {
+      "dtype": "float16",
+      "fast": true,
+      "file": "us_blur.png",
+      "expected": "4VNK708",
+      "actual": "WASHINGTON 4VNK708 EVERGREEN STATE",
+      "match": false,
+      "seconds": 0.3211786523461342
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "us_clean.png",
+      "expected": "8MQZ204",
+      "actual": "OREGON 8MQZ204 PACIFIC WONDERLAND",
+      "match": false,
+      "seconds": 3.737521255388856
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "us_angled.jpg",
+      "expected": "7LPN684",
+      "actual": "7LPN684",
+      "match": true,
+      "seconds": 0.20471798814833164
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "chinese_clean.png",
+      "expected": "\u7ca4C\u00b760983",
+      "actual": "\u7ca4C\u00b760983",
+      "match": true,
+      "seconds": 0.24325762502849102
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "chinese_glare.jpg",
+      "expected": "\u6d59D\u00b760609",
+      "actual": "\u6d59D\u00b760609",
+      "match": true,
+      "seconds": 0.23180008493363857
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "stop_clean.png",
+      "expected": "STOP",
+      "actual": "STOP",
+      "match": true,
+      "seconds": 0.12795363180339336
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "stop_noise.tiff",
+      "expected": "STOP",
+      "actual": "STOP",
+      "match": true,
+      "seconds": 0.11718383058905602
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "speed.jpg",
+      "expected": "SPEED LIMIT 45",
+      "actual": "SPEED LIMIT 45",
+      "match": true,
+      "seconds": 0.28560298681259155
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "warning.png",
+      "expected": "LANE CLOSED AHEAD",
+      "actual": "Lane 2023",
+      "match": false,
+      "seconds": 0.2707553505897522
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "advisory.tiff",
+      "expected": "25",
+      "actual": "25",
+      "match": true,
+      "seconds": 0.12312879599630833
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": false,
+      "file": "us_blur.png",
+      "expected": "4VNK708",
+      "actual": "WASHINGTON 4VNK708 EVERGREEN STATE",
+      "match": false,
+      "seconds": 0.32854497991502285
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "us_clean.png",
+      "expected": "8MQZ204",
+      "actual": "OREGON 8MQZ204 PACIFIC WONDERLAND",
+      "match": false,
+      "seconds": 0.4296054132282734
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "us_angled.jpg",
+      "expected": "7LPN684",
+      "actual": "7LPN684",
+      "match": true,
+      "seconds": 0.1940743438899517
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "chinese_clean.png",
+      "expected": "\u7ca4C\u00b760983",
+      "actual": "\u7ca4C\u00b760983",
+      "match": true,
+      "seconds": 0.22502798587083817
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "chinese_glare.jpg",
+      "expected": "\u6d59D\u00b760609",
+      "actual": "\u6d59D\u00b760609",
+      "match": true,
+      "seconds": 0.2251407951116562
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "stop_clean.png",
+      "expected": "STOP",
+      "actual": "STOP",
+      "match": true,
+      "seconds": 0.10512706451117992
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "stop_noise.tiff",
+      "expected": "STOP",
+      "actual": "STOP",
+      "match": true,
+      "seconds": 0.10956654138863087
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "speed.jpg",
+      "expected": "SPEED LIMIT 45",
+      "actual": "SPEED LIMIT 45",
+      "match": true,
+      "seconds": 0.2523984592407942
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "warning.png",
+      "expected": "LANE CLOSED AHEAD",
+      "actual": "Lane 2023",
+      "match": false,
+      "seconds": 0.24019878543913364
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "advisory.tiff",
+      "expected": "25",
+      "actual": "25",
+      "match": true,
+      "seconds": 0.10516225546598434
+    },
+    {
+      "dtype": "bfloat16",
+      "fast": true,
+      "file": "us_blur.png",
+      "expected": "4VNK708",
+      "actual": "WASHINGTON 4VNK708 EVERGREEN STATE",
+      "match": false,
+      "seconds": 0.31847252137959003
+    }
+  ]
+}

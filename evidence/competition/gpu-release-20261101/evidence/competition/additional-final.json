@@ -1,0 +1,260 @@
+{
+  "kind": "additional_synthetic_regression",
+  "source_sha256": {
+    "__init__.py": "0febd0c93e649bb77098624ef3e22b08d2720d48d522b5d7dfffd6437d40ec02",
+    "app.py": "5c804b05d406373fe4f0d4411c1c4d5c7cca4d4a70e7a24a61312d95c9de50ec",
+    "contract.py": "195485606b4c57e7aa309ad5ea21bfd4e2439cb5ef8e4e6f2f05b3e9068e4136",
+    "download_model.py": "1fcda182c496059000ba6620f6e366ff618497786f976963a96b2ea792b69bd1",
+    "engine.py": "79bd8515ffb9779c077eb592b473661274d3df4467bd47be5ce028907301a306",
+    "generate_cases.py": "7b6d8daf89b0876f4ec345b15b1aa0342ad39e9b5b18e80763d7a0b3c4be4509",
+    "health.py": "84a758de194effcfd4f8b7a64d03d8bb5d031a58fc21aaae89d1bd0eea8ea006",
+    "notebook_validate.py": "16ce52a0e02013237cff98577ef55675c068673c88665de4cca85e58a15b212f",
+    "preflight.py": "41f192a5379c85f945d9f878aa9510f249257480a62ee412a2340ac6bef690d7",
+    "processor.py": "d2fcea33c2fae9703b6a5a50864de9535af006984b3bd471fd69a7d1bd7c0560",
+    "telemetry.py": "efcd90855fac90fa4ab849335840211425c5dd7d17c1714a0c91347defc37c70",
+    "validate.py": "538981868c897a41ed2e9bf96c1186f4eb24af0d1c8d1f08663a17fa1cd1731c",
+    "worker.py": "16b9995b7b0439b73b23873ae66e1862750e9df07f96a46b0ab06fffab730fdc",
+    "text_crop.py": "e1e275e17f9442c497cba4d264b9f0d3963c5888e37c52cef679ba299cb69bdc",
+    "notebook_setup.py": "8bff927ad158eea9e873ae9a52d14d985332eeab74c52005857236d36d233200"
+  },
+  "runtime": {
+    "backend": "rocm",
+    "hip_version": "7.15.26333",
+    "torch_version": "2.13.0+rocm10.0.0",
+    "gpu": "AMD Radeon Pro W7900D",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "weight_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+    "parameter_bytes": 4255064064,
+    "model_spec_sha256": "5758778c472649245ff6e1c73827aacb71022557d04048cf22d2520359c4a5e0",
+    "model_manifest_sha256": "a22815e0eda3f59378b8c262d6d0d6fe82146be807148ad2af331f936e02ec32",
+    "model_metadata_sha256": {
+      "generation_config.json": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+      "config.json": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+      "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+      "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "dtype": "float16",
+    "attention": "sdpa",
+    "preprocessing": "full-scene-plus-optional-contrast-view",
+    "memory": {
+      "allocated_bytes": 4334771712,
+      "reserved_bytes": 4469030912,
+      "driver_used_bytes": 5046272000,
+      "device_total_bytes": 51522830336,
+      "max_allocated_bytes": 4413231616,
+      "max_reserved_bytes": 4567597056
+    }
+  },
+  "cases": [
+    {
+      "file": "runs/diagnostic-sign-0.png",
+      "expected": "ROAD WORK AHEAD",
+      "actual": "ROAD WORK AHEAD",
+      "match": true,
+      "views": [
+        [
+          800,
+          800
+        ],
+        [
+          267,
+          349
+        ]
+      ],
+      "sha256": "75395e79adf55292c7977b9872a4f74f6775bc6ed6549d9c0c0215bdb943fbe7",
+      "metrics": {
+        "inference_seconds": 2.726758313830942,
+        "generated_tokens": 7,
+        "memory": {
+          "allocated_bytes": 4352317952,
+          "reserved_bytes": 4565499904,
+          "driver_used_bytes": 5132255232,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4525829120,
+          "max_reserved_bytes": 4565499904
+        }
+      }
+    },
+    {
+      "file": "runs/diagnostic-sign-1.png",
+      "expected": "KEEP RIGHT",
+      "actual": "KEEP RIGHT",
+      "match": true,
+      "views": [
+        [
+          800,
+          800
+        ],
+        [
+          237,
+          219
+        ]
+      ],
+      "sha256": "57a58de059f193050deb4fe4774e918d9b34620e9c2394e0e0935de2d4306d27",
+      "metrics": {
+        "inference_seconds": 0.2685920437797904,
+        "generated_tokens": 3,
+        "memory": {
+          "allocated_bytes": 4351359488,
+          "reserved_bytes": 4563402752,
+          "driver_used_bytes": 5132255232,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4518482944,
+          "max_reserved_bytes": 4565499904
+        }
+      }
+    },
+    {
+      "file": "runs/diagnostic-sign-2.png",
+      "expected": "BRIDGE MAY BE ICY",
+      "actual": "BRIDGE MAY BE ICY",
+      "match": true,
+      "views": [
+        [
+          800,
+          800
+        ],
+        [
+          277,
+          350
+        ]
+      ],
+      "sha256": "0087abede71737503630bd89ffc8b09d5ac8a04dfebde5339881929b52e8f795",
+      "metrics": {
+        "inference_seconds": 0.38701105676591396,
+        "generated_tokens": 9,
+        "memory": {
+          "allocated_bytes": 4352588288,
+          "reserved_bytes": 4567597056,
+          "driver_used_bytes": 5136449536,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4534178816,
+          "max_reserved_bytes": 4567597056
+        }
+      }
+    },
+    {
+      "file": "runs/diagnostic-sign-3.png",
+      "expected": "DO NOT ENTER",
+      "actual": "DO NOT ENTER",
+      "match": true,
+      "views": [
+        [
+          800,
+          800
+        ],
+        [
+          293,
+          219
+        ]
+      ],
+      "sha256": "f40fa7ab931171a28dad08e06fa558a349115df882e24773a4aa7441765e73e0",
+      "metrics": {
+        "inference_seconds": 0.2970153489150107,
+        "generated_tokens": 5,
+        "memory": {
+          "allocated_bytes": 4351703552,
+          "reserved_bytes": 4563402752,
+          "driver_used_bytes": 5132255232,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4523132928,
+          "max_reserved_bytes": 4567597056
+        }
+      }
+    },
+    {
+      "file": "runs/diagnostic-sign-4.png",
+      "expected": "YIELD",
+      "actual": "YIELD",
+      "match": true,
+      "views": [
+        [
+          800,
+          800
+        ],
+        [
+          227,
+          88
+        ]
+      ],
+      "sha256": "f63ac42690a22ad0ee14f7fdbde7b76191f6459ddf13e40a9f1617e71215a99b",
+      "metrics": {
+        "inference_seconds": 0.2586664929986,
+        "generated_tokens": 3,
+        "memory": {
+          "allocated_bytes": 4350669824,
+          "reserved_bytes": 4538236928,
+          "driver_used_bytes": 5109186560,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4509700096,
+          "max_reserved_bytes": 4563402752
+        }
+      }
+    },
+    {
+      "file": "runs/diagnostic-sign-5.png",
+      "expected": "MAXIMUM HEIGHT 4.2M",
+      "actual": "MAXIMUM HEIGHT 4.2 M",
+      "match": true,
+      "views": [
+        [
+          800,
+          800
+        ],
+        [
+          364,
+          348
+        ]
+      ],
+      "sha256": "7afbe973be0ddc839e8f54a6d9a4e2727e1272ae11073bc320ee0f52d61a91f1",
+      "metrics": {
+        "inference_seconds": 0.4053584625944495,
+        "generated_tokens": 10,
+        "memory": {
+          "allocated_bytes": 4353130496,
+          "reserved_bytes": 4567597056,
+          "driver_used_bytes": 5138546688,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4534618624,
+          "max_reserved_bytes": 4567597056
+        }
+      }
+    },
+    {
+      "file": "runs/mixed-contrast.png",
+      "expected": "UPPER TEXT",
+      "actual": "UPPER TEXT",
+      "match": true,
+      "views": [
+        [
+          420,
+          420
+        ],
+        [
+          145,
+          49
+        ]
+      ],
+      "sha256": "ff311e39ee2f0db3ce1ec22bab0c35536a45f05aa29fa4a5fe948cc4960ac1e8",
+      "metrics": {
+        "inference_seconds": 0.24242499191313982,
+        "generated_tokens": 5,
+        "memory": {
+          "allocated_bytes": 4339452416,
+          "reserved_bytes": 4469030912,
+          "driver_used_bytes": 5046272000,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4413231616,
+          "max_reserved_bytes": 4567597056
+        }
+      }
+    }
+  ],
+  "passed": true
+}

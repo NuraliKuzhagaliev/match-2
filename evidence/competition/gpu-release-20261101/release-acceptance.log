@@ -1,0 +1,129 @@
+{"event": "case", "file": "us_clean.png", "expected": "8MQZ204", "input_sha256": "958238c2c15bc07caa727f4ad3327d22e5a4475237dfc17f44e2dd29c00749b4", "seconds": 0.3143295240588486, "exit_code": 0, "output": {"text": "8MQZ204"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "us_angled.jpg", "expected": "7LPN684", "input_sha256": "3dbf82c26b184e8dd599ff987920ba750e6262db48b63611c71e45fadf2d1836", "seconds": 0.27612793631851673, "exit_code": 0, "output": {"text": "7LPN684"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "chinese_clean.png", "expected": "\u7ca4C\u00b760983", "input_sha256": "330ae7bcfbdd3c8f26cabc2adf0e1fdc56f222253045d5c1b7f09a04395d10d6", "seconds": 0.30345133878290653, "exit_code": 0, "output": {"text": "\u7ca4C\u00b760983"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "chinese_glare.jpg", "expected": "\u6d59D\u00b760609", "input_sha256": "e8f965a50ca304648694b533e231053775db41588c2d4adbb7220c829e640203", "seconds": 0.29610592825338244, "exit_code": 0, "output": {"text": "\u6d59D\u00b760609"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "stop_clean.png", "expected": "STOP", "input_sha256": "41ebbb41256a722164e8a4d72d1b5d8c341d52de5f1c458ca967721bd9dcad12", "seconds": 0.31243700766935945, "exit_code": 0, "output": {"text": "STOP"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "stop_noise.tiff", "expected": "STOP", "input_sha256": "be73f2815d4b2fe46c4aa886b8dd69a318762d2f7d5513182899c7059ddbcd20", "seconds": 0.3284302423708141, "exit_code": 0, "output": {"text": "STOP"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "speed.jpg", "expected": "SPEED LIMIT 45", "input_sha256": "9cc98a24c02dc6e45e7372785044ca428ed549f36a366e84a3061cd282fe0d6a", "seconds": 0.6258352086879313, "exit_code": 0, "output": {"text": "SPEED LIMIT 45"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "warning.png", "expected": "LANE CLOSED AHEAD", "input_sha256": "3513e3ccc8a0fbd1787a070b47c12af1e9b3ae6bc50b6c3ea8afe38422f8252d", "seconds": 0.588549105450511, "exit_code": 0, "output": {"text": "LANE CLOSED AHEAD"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "advisory.tiff", "expected": "25", "input_sha256": "8dab8cbca2633ad84c5393fae955bbf2652693f946454e76c0207be947448eb7", "seconds": 0.241025413852185, "exit_code": 0, "output": {"text": "25"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "us_blur.png", "expected": "4VNK708", "input_sha256": "f3d898107fa915d164932ef46740dea4e62983b49627a2ff520f90290abaec31", "seconds": 0.27518014423549175, "exit_code": 0, "output": {"text": "4VNK708"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{
+  "decision": "direct_runtime_passed_container_unverified",
+  "gates": [
+    {
+      "id": "docker_build_layers_size",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "startup",
+      "status": "PASS",
+      "detail": 16.006057313177735
+    },
+    {
+      "id": "rocm_runtime",
+      "status": "PASS",
+      "detail": {
+        "ok": true,
+        "request_id": "6e3744eedadd4b32bea6404e07ea9745",
+        "ready": true,
+        "backend": "rocm",
+        "hip_version": "7.15.26333",
+        "torch_version": "2.13.0+rocm10.0.0",
+        "gpu": "AMD Radeon Pro W7900D",
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "weight_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+        "parameter_bytes": 4255064064,
+        "model_spec_sha256": "5758778c472649245ff6e1c73827aacb71022557d04048cf22d2520359c4a5e0",
+        "model_manifest_sha256": "a22815e0eda3f59378b8c262d6d0d6fe82146be807148ad2af331f936e02ec32",
+        "model_metadata_sha256": {
+          "generation_config.json": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4",
+          "config.json": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b",
+          "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+          "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+          "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+          "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+          "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+          "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        "dtype": "float16",
+        "attention": "sdpa",
+        "preprocessing": "full-scene-plus-optional-contrast-view",
+        "memory": {
+          "allocated_bytes": 4334771712,
+          "reserved_bytes": 4448059392,
+          "driver_used_bytes": 4972871680,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4395478016,
+          "max_reserved_bytes": 4448059392
+        },
+        "model_loads": 1,
+        "startup_seconds": 15.72874401602894,
+        "pid": 1851,
+        "ready_monotonic_seconds": 4108833.250311952,
+        "checked_monotonic_seconds": 4108833.452749561
+      }
+    },
+    {
+      "id": "independent_sampler_started",
+      "status": "PASS",
+      "detail": "Separate ROCm sampler must be ready and alive"
+    },
+    {
+      "id": "single_model_load",
+      "status": "PASS",
+      "detail": 1851
+    },
+    {
+      "id": "output_contract",
+      "status": "PASS",
+      "detail": "Ten CLI calls with actual model outputs"
+    },
+    {
+      "id": "per_image_runtime",
+      "status": "PASS",
+      "detail": "Whole CLI <=30 seconds"
+    },
+    {
+      "id": "total_runtime",
+      "status": "PASS",
+      "detail": 3.570940053090453
+    },
+    {
+      "id": "local_exact_match",
+      "status": "PASS",
+      "detail": "Synthetic local regression; not hidden contest accuracy"
+    },
+    {
+      "id": "independent_sampler_coverage",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "status": {
+          "status": "COMPLETE",
+          "pid": 1850,
+          "samples": 6
+        }
+      }
+    },
+    {
+      "id": "vram",
+      "status": "PASS",
+      "detail": 5142740992
+    }
+  ],
+  "report": "evidence/competition/notebook-acceptance-release.json"
+}
+/workspace/visionforge-match2/.amd-venv/lib/python3.14/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"file": "runs/diagnostic-sign-0.png", "expected": "ROAD WORK AHEAD", "actual": "ROAD WORK AHEAD", "match": true, "views": [[800, 800], [267, 349]], "sha256": "75395e79adf55292c7977b9872a4f74f6775bc6ed6549d9c0c0215bdb943fbe7", "metrics": {"inference_seconds": 2.726758313830942, "generated_tokens": 7, "memory": {"allocated_bytes": 4352317952, "reserved_bytes": 4565499904, "driver_used_bytes": 5132255232, "device_total_bytes": 51522830336, "max_allocated_bytes": 4525829120, "max_reserved_bytes": 4565499904}}}
+{"file": "runs/diagnostic-sign-1.png", "expected": "KEEP RIGHT", "actual": "KEEP RIGHT", "match": true, "views": [[800, 800], [237, 219]], "sha256": "57a58de059f193050deb4fe4774e918d9b34620e9c2394e0e0935de2d4306d27", "metrics": {"inference_seconds": 0.2685920437797904, "generated_tokens": 3, "memory": {"allocated_bytes": 4351359488, "reserved_bytes": 4563402752, "driver_used_bytes": 5132255232, "device_total_bytes": 51522830336, "max_allocated_bytes": 4518482944, "max_reserved_bytes": 4565499904}}}
+{"file": "runs/diagnostic-sign-2.png", "expected": "BRIDGE MAY BE ICY", "actual": "BRIDGE MAY BE ICY", "match": true, "views": [[800, 800], [277, 350]], "sha256": "0087abede71737503630bd89ffc8b09d5ac8a04dfebde5339881929b52e8f795", "metrics": {"inference_seconds": 0.38701105676591396, "generated_tokens": 9, "memory": {"allocated_bytes": 4352588288, "reserved_bytes": 4567597056, "driver_used_bytes": 5136449536, "device_total_bytes": 51522830336, "max_allocated_bytes": 4534178816, "max_reserved_bytes": 4567597056}}}
+{"file": "runs/diagnostic-sign-3.png", "expected": "DO NOT ENTER", "actual": "DO NOT ENTER", "match": true, "views": [[800, 800], [293, 219]], "sha256": "f40fa7ab931171a28dad08e06fa558a349115df882e24773a4aa7441765e73e0", "metrics": {"inference_seconds": 0.2970153489150107, "generated_tokens": 5, "memory": {"allocated_bytes": 4351703552, "reserved_bytes": 4563402752, "driver_used_bytes": 5132255232, "device_total_bytes": 51522830336, "max_allocated_bytes": 4523132928, "max_reserved_bytes": 4567597056}}}
+{"file": "runs/diagnostic-sign-4.png", "expected": "YIELD", "actual": "YIELD", "match": true, "views": [[800, 800], [227, 88]], "sha256": "f63ac42690a22ad0ee14f7fdbde7b76191f6459ddf13e40a9f1617e71215a99b", "metrics": {"inference_seconds": 0.2586664929986, "generated_tokens": 3, "memory": {"allocated_bytes": 4350669824, "reserved_bytes": 4538236928, "driver_used_bytes": 5109186560, "device_total_bytes": 51522830336, "max_allocated_bytes": 4509700096, "max_reserved_bytes": 4563402752}}}
+{"file": "runs/diagnostic-sign-5.png", "expected": "MAXIMUM HEIGHT 4.2M", "actual": "MAXIMUM HEIGHT 4.2 M", "match": true, "views": [[800, 800], [364, 348]], "sha256": "7afbe973be0ddc839e8f54a6d9a4e2727e1272ae11073bc320ee0f52d61a91f1", "metrics": {"inference_seconds": 0.4053584625944495, "generated_tokens": 10, "memory": {"allocated_bytes": 4353130496, "reserved_bytes": 4567597056, "driver_used_bytes": 5138546688, "device_total_bytes": 51522830336, "max_allocated_bytes": 4534618624, "max_reserved_bytes": 4567597056}}}
+{"file": "runs/mixed-contrast.png", "expected": "UPPER TEXT", "actual": "UPPER TEXT", "match": true, "views": [[420, 420], [145, 49]], "sha256": "ff311e39ee2f0db3ce1ec22bab0c35536a45f05aa29fa4a5fe948cc4960ac1e8", "metrics": {"inference_seconds": 0.24242499191313982, "generated_tokens": 5, "memory": {"allocated_bytes": 4339452416, "reserved_bytes": 4469030912, "driver_used_bytes": 5046272000, "device_total_bytes": 51522830336, "max_allocated_bytes": 4413231616, "max_reserved_bytes": 4567597056}}}
+ADDITIONAL_PASSED True

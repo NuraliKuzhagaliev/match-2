@@ -1,0 +1,9 @@
+Tested source/fixture/runner core SHA256: e9d8d8550dc3de7d8b1531f327dacb47c0fb976f2c5ed8d07a887fb616409028
+Core files: 40, including all11 fixture/manifest files
+Unpacked packet tests: competition + submission
+Exit: 0
+.........................................                                [100%]
+41 passed in 0.84s
+
+
+Final evidence-only repack must keep this tested core identical.

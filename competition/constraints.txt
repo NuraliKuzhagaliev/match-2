@@ -1,0 +1,3 @@
+# PEP 440 accepts the base's +rocm10.0.0 local version with this constraint.
+torch==2.13.0
+torchvision==0.28.0+rocm10.0.0

@@ -1,0 +1,113 @@
+[
+  {
+    "file": "us_clean.png",
+    "expected": "8MQZ204",
+    "kind": "us_plate",
+    "conditions": [
+      "clean"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "958238c2c15bc07caa727f4ad3327d22e5a4475237dfc17f44e2dd29c00749b4"
+  },
+  {
+    "file": "us_angled.jpg",
+    "expected": "7LPN684",
+    "kind": "us_plate",
+    "conditions": [
+      "off_axis"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "3dbf82c26b184e8dd599ff987920ba750e6262db48b63611c71e45fadf2d1836"
+  },
+  {
+    "file": "chinese_clean.png",
+    "expected": "粤C·60983",
+    "kind": "chinese_plate",
+    "conditions": [
+      "clean"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "330ae7bcfbdd3c8f26cabc2adf0e1fdc56f222253045d5c1b7f09a04395d10d6"
+  },
+  {
+    "file": "chinese_glare.jpg",
+    "expected": "浙D·60609",
+    "kind": "chinese_plate",
+    "conditions": [
+      "low_light",
+      "glare"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "e8f965a50ca304648694b533e231053775db41588c2d4adbb7220c829e640203"
+  },
+  {
+    "file": "stop_clean.png",
+    "expected": "STOP",
+    "kind": "stop_sign",
+    "conditions": [
+      "clean"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "41ebbb41256a722164e8a4d72d1b5d8c341d52de5f1c458ca967721bd9dcad12"
+  },
+  {
+    "file": "stop_noise.tiff",
+    "expected": "STOP",
+    "kind": "stop_sign",
+    "conditions": [
+      "sensor_noise"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "be73f2815d4b2fe46c4aa886b8dd69a318762d2f7d5513182899c7059ddbcd20"
+  },
+  {
+    "file": "speed.jpg",
+    "expected": "SPEED LIMIT 45",
+    "kind": "speed_sign",
+    "conditions": [
+      "multiline"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "9cc98a24c02dc6e45e7372785044ca428ed549f36a366e84a3061cd282fe0d6a"
+  },
+  {
+    "file": "warning.png",
+    "expected": "LANE CLOSED AHEAD",
+    "kind": "warning_sign",
+    "conditions": [
+      "multiline"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "3513e3ccc8a0fbd1787a070b47c12af1e9b3ae6bc50b6c3ea8afe38422f8252d"
+  },
+  {
+    "file": "advisory.tiff",
+    "expected": "25",
+    "kind": "advisory_sign",
+    "conditions": [
+      "digits_only"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "8dab8cbca2633ad84c5393fae955bbf2652693f946454e76c0207be947448eb7"
+  },
+  {
+    "file": "us_blur.png",
+    "expected": "4VNK708",
+    "kind": "us_plate",
+    "conditions": [
+      "blur"
+    ],
+    "origin": "self-generated; synthetic, not real-world performance evidence",
+    "license": "CC0-1.0 image content; font files not redistributed",
+    "sha256": "f3d898107fa915d164932ef46740dea4e62983b49627a2ff520f90290abaec31"
+  }
+]

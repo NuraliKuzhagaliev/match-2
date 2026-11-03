@@ -1,0 +1,679 @@
+{
+  "created_at": "2026-10-31T23:50:58.675541+00:00",
+  "artifact_kind": "source_only",
+  "submission_ready": false,
+  "files": {
+    ".dockerignore": {
+      "bytes": 250,
+      "sha256": "66933cd10a20479488fa1bfcad54be3d834e586a2230245bc080ca74d1be164b"
+    },
+    ".gitignore": {
+      "bytes": 275,
+      "sha256": "f9446a95d51e6c8b4211f5c12525053305f6c9c0ebb77fda1d2ba97ce7ff1afb"
+    },
+    "README.md": {
+      "bytes": 427,
+      "sha256": "135d479f5d0541e0d45e6218b1cecc5c76cc43bb394f56d2c839672fb47c39f1"
+    },
+    "competition/Dockerfile": {
+      "bytes": 1884,
+      "sha256": "b85c67655066b34e3def1ffd98e62ffe27d66995be12f98e63052e337a14769f"
+    },
+    "competition/README.md": {
+      "bytes": 17331,
+      "sha256": "03bf8f6183c45f61aedc0499121eeed71e5d0ced2d300a0a6aab39183a453fd0"
+    },
+    "competition/__init__.py": {
+      "bytes": 76,
+      "sha256": "0febd0c93e649bb77098624ef3e22b08d2720d48d522b5d7dfffd6437d40ec02"
+    },
+    "competition/app.py": {
+      "bytes": 1243,
+      "sha256": "5c804b05d406373fe4f0d4411c1c4d5c7cca4d4a70e7a24a61312d95c9de50ec"
+    },
+    "competition/check.sh": {
+      "bytes": 1541,
+      "sha256": "8d6313664f5302459d30bae5cd8772bde9b35e237ac86bd5afce9f8a2c1aa688"
+    },
+    "competition/constraints.txt": {
+      "bytes": 122,
+      "sha256": "03293e83b0e1448bffd9a62431837c5baf5269cb0086d3dbf73312df1bf7a039"
+    },
+    "competition/contract.py": {
+      "bytes": 4233,
+      "sha256": "195485606b4c57e7aa309ad5ea21bfd4e2439cb5ef8e4e6f2f05b3e9068e4136"
+    },
+    "competition/download_model.py": {
+      "bytes": 1294,
+      "sha256": "1fcda182c496059000ba6620f6e366ff618497786f976963a96b2ea792b69bd1"
+    },
+    "competition/engine.py": {
+      "bytes": 9268,
+      "sha256": "79bd8515ffb9779c077eb592b473661274d3df4467bd47be5ce028907301a306"
+    },
+    "competition/generate_cases.py": {
+      "bytes": 5750,
+      "sha256": "7b6d8daf89b0876f4ec345b15b1aa0342ad39e9b5b18e80763d7a0b3c4be4509"
+    },
+    "competition/health.py": {
+      "bytes": 481,
+      "sha256": "84a758de194effcfd4f8b7a64d03d8bb5d031a58fc21aaae89d1bd0eea8ea006"
+    },
+    "competition/model-spec.json": {
+      "bytes": 397,
+      "sha256": "5758778c472649245ff6e1c73827aacb71022557d04048cf22d2520359c4a5e0"
+    },
+    "competition/notebook_setup.py": {
+      "bytes": 3299,
+      "sha256": "8bff927ad158eea9e873ae9a52d14d985332eeab74c52005857236d36d233200"
+    },
+    "competition/notebook_validate.py": {
+      "bytes": 9034,
+      "sha256": "16ce52a0e02013237cff98577ef55675c068673c88665de4cca85e58a15b212f"
+    },
+    "competition/preflight.py": {
+      "bytes": 3288,
+      "sha256": "41f192a5379c85f945d9f878aa9510f249257480a62ee412a2340ac6bef690d7"
+    },
+    "competition/processor.py": {
+      "bytes": 1702,
+      "sha256": "d2fcea33c2fae9703b6a5a50864de9535af006984b3bd471fd69a7d1bd7c0560"
+    },
+    "competition/requirements.txt": {
+      "bytes": 177,
+      "sha256": "96c24b130c5ae8583c40e26c1f6258d526ac83e47aa17b2dc23bcb1895b83687"
+    },
+    "competition/telemetry.py": {
+      "bytes": 1479,
+      "sha256": "efcd90855fac90fa4ab849335840211425c5dd7d17c1714a0c91347defc37c70"
+    },
+    "competition/text_crop.py": {
+      "bytes": 2356,
+      "sha256": "e1e275e17f9442c497cba4d264b9f0d3963c5888e37c52cef679ba299cb69bdc"
+    },
+    "competition/validate.py": {
+      "bytes": 13776,
+      "sha256": "538981868c897a41ed2e9bf96c1186f4eb24af0d1c8d1f08663a17fa1cd1731c"
+    },
+    "competition/worker.py": {
+      "bytes": 4919,
+      "sha256": "16b9995b7b0439b73b23873ae66e1862750e9df07f96a46b0ab06fffab730fdc"
+    },
+    "data/competition/advisory.tiff": {
+      "bytes": 811340,
+      "sha256": "8dab8cbca2633ad84c5393fae955bbf2652693f946454e76c0207be947448eb7"
+    },
+    "data/competition/chinese_clean.png": {
+      "bytes": 18349,
+      "sha256": "330ae7bcfbdd3c8f26cabc2adf0e1fdc56f222253045d5c1b7f09a04395d10d6"
+    },
+    "data/competition/chinese_glare.jpg": {
+      "bytes": 18033,
+      "sha256": "e8f965a50ca304648694b533e231053775db41588c2d4adbb7220c829e640203"
+    },
+    "data/competition/manifest.json": {
+      "bytes": 3805,
+      "sha256": "e7a3f1a32b1f17cf36817957981834444c074472ee4d0da8f327d90b280907bd"
+    },
+    "data/competition/speed.jpg": {
+      "bytes": 32514,
+      "sha256": "9cc98a24c02dc6e45e7372785044ca428ed549f36a366e84a3061cd282fe0d6a"
+    },
+    "data/competition/stop_clean.png": {
+      "bytes": 12073,
+      "sha256": "41ebbb41256a722164e8a4d72d1b5d8c341d52de5f1c458ca967721bd9dcad12"
+    },
+    "data/competition/stop_noise.tiff": {
+      "bytes": 1080140,
+      "sha256": "be73f2815d4b2fe46c4aa886b8dd69a318762d2f7d5513182899c7059ddbcd20"
+    },
+    "data/competition/us_angled.jpg": {
+      "bytes": 28277,
+      "sha256": "3dbf82c26b184e8dd599ff987920ba750e6262db48b63611c71e45fadf2d1836"
+    },
+    "data/competition/us_blur.png": {
+      "bytes": 58589,
+      "sha256": "f3d898107fa915d164932ef46740dea4e62983b49627a2ff520f90290abaec31"
+    },
+    "data/competition/us_clean.png": {
+      "bytes": 21033,
+      "sha256": "958238c2c15bc07caa727f4ad3327d22e5a4475237dfc17f44e2dd29c00749b4"
+    },
+    "data/competition/warning.png": {
+      "bytes": 19627,
+      "sha256": "3513e3ccc8a0fbd1787a070b47c12af1e9b3ae6bc50b6c3ea8afe38422f8252d"
+    },
+    "evidence/competition/amd-environment-20261030.json": {
+      "bytes": 1288,
+      "sha256": "5a3f84c27c352fc51456038f24ce9ad76042a17d268b595e08c18123a17137e1"
+    },
+    "evidence/competition/amd-final-20261101.png": {
+      "bytes": 122428,
+      "sha256": "c98236b3aa508ed5b5af41affbe4442e098347b3a6877105bb60bcb8d3ffd386"
+    },
+    "evidence/competition/amd-release-20261101.png": {
+      "bytes": 122955,
+      "sha256": "4ea46d380597d8cbc4142ee11aff8a81ed05ed7cc3766cf74516d1118e08efe4"
+    },
+    "evidence/competition/anonymous-mechanism-20261101.json": {
+      "bytes": 469,
+      "sha256": "06d71454f49af507c9820acd950e19102d210e92dc57a53a976edead9fc35d52"
+    },
+    "evidence/competition/base-pull-final-20261101.txt": {
+      "bytes": 472,
+      "sha256": "049f8653a72599a42cb29c188b97c5f276d5c8f92ddb1f30bcda270375fda67a"
+    },
+    "evidence/competition/brief-contract-20261101.json": {
+      "bytes": 820,
+      "sha256": "4bd787f943e8d4ef80e22efd00a3f81394beea9a2daa50c199e8be2eef0fea01"
+    },
+    "evidence/competition/contract-tests-20261101.txt": {
+      "bytes": 101,
+      "sha256": "0b9acd4be5acd4183b793b1d471e799f651bfb94d779c477d875865930e771c3"
+    },
+    "evidence/competition/contract-tests.txt": {
+      "bytes": 101,
+      "sha256": "6536eccdaf08dc271e3645f810bad2b1ebc63fc0946ca62b1bad2fccbbb9eebc"
+    },
+    "evidence/competition/docker-build-release-20261101.txt": {
+      "bytes": 4007,
+      "sha256": "ff8f0f633217dbc9136203e220d19d474eeda594dcc055b720931a53b11de370"
+    },
+    "evidence/competition/gpu-baseline-20261030/evidence/competition/notebook-acceptance.json": {
+      "bytes": 13700,
+      "sha256": "160c8f7f29965927ef33241e106a28f2ea886f1a44c18efec1589552ea5cd740"
+    },
+    "evidence/competition/gpu-baseline-20261030/models/qwen3-vl-2b/visionforge-manifest.json": {
+      "bytes": 1298,
+      "sha256": "3a51fdfc1d16cfe18215297b95806854f4823d5229d9ac4f0dfbf5d9474b930d"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/evidence/inference.jsonl": {
+      "bytes": 5050,
+      "sha256": "4203e077ad54a87893fcb95b4c7b8c75b125fd9621d63a881530148c133eb826"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/evidence/stop-sampling": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/evidence/telemetry-ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/evidence/vram-samples.jsonl": {
+      "bytes": 967,
+      "sha256": "3d91ee83b3b56a43c0c4283129bc0e56b3cd85ca1e8e88122a999e8ae1f5ee7b"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/advisory_output.json": {
+      "bytes": 14,
+      "sha256": "6c2a6492384756b8ecf45849c76b2dd0e38ec61810c9272d7cecf5bb33e7d701"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/chinese_clean_output.json": {
+      "bytes": 23,
+      "sha256": "b3cfa643255a2aff57b2beeda96b099f3a237b7def1efeaeba7666f10e5d0e1d"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/chinese_glare_output.json": {
+      "bytes": 23,
+      "sha256": "63a28b66f324dee7860cffdca7f5a0893e2780b3b0cb4686df94c0ec26ef8cbc"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/speed_output.json": {
+      "bytes": 26,
+      "sha256": "2faaabc6e0d1380d62a3e346f7f466fccad7286f87fb45767d5652d4b6281bba"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/stop_clean_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/stop_noise_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/us_angled_output.json": {
+      "bytes": 19,
+      "sha256": "24ff406314f505bdce22e8039504421328eb9b40676db14c8b1bc3e377dce34d"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/us_blur_output.json": {
+      "bytes": 19,
+      "sha256": "c8873ac800db275cc89f5a2e854f7d66402bc5234ffba404389727468b5e7969"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/us_clean_output.json": {
+      "bytes": 19,
+      "sha256": "dd2c04a06ab15ad9c4fbbdca7d9f91d954305c1e761689cbeb17a4efc5c7ae78"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/output/warning_output.json": {
+      "bytes": 19,
+      "sha256": "2b4b75b5714ccd429688853ae9b41c2f20474e900d8a4fb19749f6e218dbf5fe"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/sampler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-baseline-20261030/runs/53fa72baae/worker.log": {
+      "bytes": 1054,
+      "sha256": "61a7bbb207f6dedfd0519dba2c9db355db5a38690be82c3196581e108006a165"
+    },
+    "evidence/competition/gpu-baseline-20261030/setup-and-validate.log": {
+      "bytes": 20947,
+      "sha256": "81a975c79b86c01184c8c7c5be76f447122df2bb80b0bc2b65d26f379048dce3"
+    },
+    "evidence/competition/gpu-baseline-20261030/setup-fixed.log": {
+      "bytes": 14326,
+      "sha256": "eef24a3dbcb833d971838e1536a1767ffeb141819ea518960c3bbe21ab44d6b6"
+    },
+    "evidence/competition/gpu-final-20261101/crop-diagnostics.log": {
+      "bytes": 3357,
+      "sha256": "8bfb99dfdf56f9af432faa80b26be9a8d5c877fb28582ef90bb23b842c526560"
+    },
+    "evidence/competition/gpu-final-20261101/diagnose-crop.py": {
+      "bytes": 1066,
+      "sha256": "66e1e326f16fadc8102080dff3dbb05e71c2a089f6f734de6d0ab34459a8e1a5"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/additional-final.json": {
+      "bytes": 7413,
+      "sha256": "07f2ae0bfb1c2a9295fcdad6cdcca7d27995ff214da10185acaf0156b4256c5d"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/crop-diagnostics.json": {
+      "bytes": 4604,
+      "sha256": "7a0b5ddd2b9ca13ee496c3539eed685193e3ac50f4d782e0ec570d8730315f39"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/local-acceptance.json": {
+      "bytes": 2380,
+      "sha256": "66c1f25097a4bd306bdda9326bf6cf8a7ef91a8d1a65db13b9ab30dc9710bed6"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/notebook-acceptance-final.json": {
+      "bytes": 14835,
+      "sha256": "564fcd3af0a983e5faa755a90156ed020170e9358955b1a3005101b02ebfa261"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/notebook-acceptance.json": {
+      "bytes": 13700,
+      "sha256": "160c8f7f29965927ef33241e106a28f2ea886f1a44c18efec1589552ea5cd740"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/preflight.json": {
+      "bytes": 7286,
+      "sha256": "3a9319db6e7368a46c173ba902d69ab072ded28546eb0cbe060ad33788afd3b1"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/prompt-diagnostics.json": {
+      "bytes": 5527,
+      "sha256": "c63b0487594d3258b934ccfc284398aa725b503c7371d195aee5aaa1c0c59dd9"
+    },
+    "evidence/competition/gpu-final-20261101/evidence/competition/runtime-diagnostics.json": {
+      "bytes": 6871,
+      "sha256": "1513991c2c44745bab4dbebb2c66ed22af703f36a2f100746384f5a663c17fbb"
+    },
+    "evidence/competition/gpu-final-20261101/final-acceptance.log": {
+      "bytes": 5653,
+      "sha256": "914a5e10c67fbf54ea0110d6087c72dd133572e47529837f43ca175eb38c13b5"
+    },
+    "evidence/competition/gpu-final-20261101/final-extra.log": {
+      "bytes": 3971,
+      "sha256": "a6667bff3133f047a1c9e1f4f3ff4b64615e302362a74df954eefcc206452358"
+    },
+    "evidence/competition/gpu-final-20261101/final-extra.py": {
+      "bytes": 1533,
+      "sha256": "1d93e7767de61949dace3e47f185b021c0c26e530b03e973840a470109e15e80"
+    },
+    "evidence/competition/gpu-final-20261101/runs/diagnostic-sign-0.png": {
+      "bytes": 17551,
+      "sha256": "75395e79adf55292c7977b9872a4f74f6775bc6ed6549d9c0c0215bdb943fbe7"
+    },
+    "evidence/competition/gpu-final-20261101/runs/diagnostic-sign-1.png": {
+      "bytes": 8790,
+      "sha256": "57a58de059f193050deb4fe4774e918d9b34620e9c2394e0e0935de2d4306d27"
+    },
+    "evidence/competition/gpu-final-20261101/runs/diagnostic-sign-2.png": {
+      "bytes": 15958,
+      "sha256": "0087abede71737503630bd89ffc8b09d5ac8a04dfebde5339881929b52e8f795"
+    },
+    "evidence/competition/gpu-final-20261101/runs/diagnostic-sign-3.png": {
+      "bytes": 9730,
+      "sha256": "f40fa7ab931171a28dad08e06fa558a349115df882e24773a4aa7441765e73e0"
+    },
+    "evidence/competition/gpu-final-20261101/runs/diagnostic-sign-4.png": {
+      "bytes": 6114,
+      "sha256": "f63ac42690a22ad0ee14f7fdbde7b76191f6459ddf13e40a9f1617e71215a99b"
+    },
+    "evidence/competition/gpu-final-20261101/runs/diagnostic-sign-5.png": {
+      "bytes": 14188,
+      "sha256": "7afbe973be0ddc839e8f54a6d9a4e2727e1272ae11073bc320ee0f52d61a91f1"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/evidence/inference.jsonl": {
+      "bytes": 5028,
+      "sha256": "66bdb254560e6e4633d3fb639713145dd938c3fe2f2f9e397fa959957178b11d"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/evidence/sampler-status.json": {
+      "bytes": 47,
+      "sha256": "eb13a08d8588cafb2e48c6551b58d2160ca6543972411687ce99752b2d86cda3"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/evidence/stop-sampling": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/evidence/telemetry-ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/evidence/vram-samples.jsonl": {
+      "bytes": 1235,
+      "sha256": "1c9157b1fb5fa6077e2ad8e1c3480299259201c36f39fa98fff24727b915233d"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/advisory_output.json": {
+      "bytes": 14,
+      "sha256": "6c2a6492384756b8ecf45849c76b2dd0e38ec61810c9272d7cecf5bb33e7d701"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/chinese_clean_output.json": {
+      "bytes": 23,
+      "sha256": "b3cfa643255a2aff57b2beeda96b099f3a237b7def1efeaeba7666f10e5d0e1d"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/chinese_glare_output.json": {
+      "bytes": 23,
+      "sha256": "63a28b66f324dee7860cffdca7f5a0893e2780b3b0cb4686df94c0ec26ef8cbc"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/speed_output.json": {
+      "bytes": 26,
+      "sha256": "2faaabc6e0d1380d62a3e346f7f466fccad7286f87fb45767d5652d4b6281bba"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/stop_clean_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/stop_noise_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/us_angled_output.json": {
+      "bytes": 19,
+      "sha256": "24ff406314f505bdce22e8039504421328eb9b40676db14c8b1bc3e377dce34d"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/us_blur_output.json": {
+      "bytes": 19,
+      "sha256": "c8873ac800db275cc89f5a2e854f7d66402bc5234ffba404389727468b5e7969"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/us_clean_output.json": {
+      "bytes": 19,
+      "sha256": "dd2c04a06ab15ad9c4fbbdca7d9f91d954305c1e761689cbeb17a4efc5c7ae78"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/output/warning_output.json": {
+      "bytes": 29,
+      "sha256": "0864d7fb7b9a371f65a043366dc66a990d7f743b0f0954a6e10fb61941fae202"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/sampler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-final-20261101/runs/ecf9aed8b9/worker.log": {
+      "bytes": 1158,
+      "sha256": "18bff3c123ba4c98cd8ff45b6bb138b4078d8e886cf8fc4087d9214ac9c43946"
+    },
+    "evidence/competition/gpu-final-20261101/runs/mixed-contrast.png": {
+      "bytes": 4207,
+      "sha256": "ff311e39ee2f0db3ce1ec22bab0c35536a45f05aa29fa4a5fe948cc4960ac1e8"
+    },
+    "evidence/competition/gpu-final-20261101/setup-fixed.log": {
+      "bytes": 14326,
+      "sha256": "eef24a3dbcb833d971838e1536a1767ffeb141819ea518960c3bbe21ab44d6b6"
+    },
+    "evidence/competition/gpu-release-20261101/evidence/competition/additional-final.json": {
+      "bytes": 8500,
+      "sha256": "f5f954c018b65a1f1944c6d4c975dfd14913aaadb5ac45276f903931b0f153a4"
+    },
+    "evidence/competition/gpu-release-20261101/evidence/competition/notebook-acceptance-release.json": {
+      "bytes": 17546,
+      "sha256": "1dac59bad5da9f035b9dba5b1d3128ca2b924b0dd0046ebed7c0ae2c235cfe09"
+    },
+    "evidence/competition/gpu-release-20261101/final-extra.py": {
+      "bytes": 1533,
+      "sha256": "1d93e7767de61949dace3e47f185b021c0c26e530b03e973840a470109e15e80"
+    },
+    "evidence/competition/gpu-release-20261101/release-acceptance.log": {
+      "bytes": 10775,
+      "sha256": "4eeeecc0b53541ef46ac6163f506b36c9a6451cc56ea05b045d8558a8983f58c"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/evidence/inference.jsonl": {
+      "bytes": 5049,
+      "sha256": "0c2cef3bf3f235731e6272e4755b45e218fb8195186eb59fb1c213362c73b497"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/evidence/sampler-status.json": {
+      "bytes": 49,
+      "sha256": "53e6365ec0c41f2d63930a44729ba7cbfa41d2b2045f79acc69c8fbc8d8833ff"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/evidence/stop-sampling": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/evidence/telemetry-ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/evidence/vram-samples.jsonl": {
+      "bytes": 819,
+      "sha256": "490902edd25567e3605195bacf084fe22ff0cd5a0fc543857323b3fdfa0dd5ed"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/advisory_output.json": {
+      "bytes": 14,
+      "sha256": "6c2a6492384756b8ecf45849c76b2dd0e38ec61810c9272d7cecf5bb33e7d701"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/chinese_clean_output.json": {
+      "bytes": 23,
+      "sha256": "b3cfa643255a2aff57b2beeda96b099f3a237b7def1efeaeba7666f10e5d0e1d"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/chinese_glare_output.json": {
+      "bytes": 23,
+      "sha256": "63a28b66f324dee7860cffdca7f5a0893e2780b3b0cb4686df94c0ec26ef8cbc"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/speed_output.json": {
+      "bytes": 26,
+      "sha256": "2faaabc6e0d1380d62a3e346f7f466fccad7286f87fb45767d5652d4b6281bba"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/stop_clean_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/stop_noise_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/us_angled_output.json": {
+      "bytes": 19,
+      "sha256": "24ff406314f505bdce22e8039504421328eb9b40676db14c8b1bc3e377dce34d"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/us_blur_output.json": {
+      "bytes": 19,
+      "sha256": "c8873ac800db275cc89f5a2e854f7d66402bc5234ffba404389727468b5e7969"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/us_clean_output.json": {
+      "bytes": 19,
+      "sha256": "dd2c04a06ab15ad9c4fbbdca7d9f91d954305c1e761689cbeb17a4efc5c7ae78"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/output/warning_output.json": {
+      "bytes": 29,
+      "sha256": "0864d7fb7b9a371f65a043366dc66a990d7f743b0f0954a6e10fb61941fae202"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/sampler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-release-20261101/runs/0475cd3335/worker.log": {
+      "bytes": 2180,
+      "sha256": "5a6184fe05acb737cae38c4b2a031687006ce6bc7d18bd490a7874a95d2dfde2"
+    },
+    "evidence/competition/gpu-setup-20261101/.amd-venv/installed-requirements.txt": {
+      "bytes": 148,
+      "sha256": "c6ecb7e70c76dd75658fdb153fcb8458afc4a9d22747f8967b772d8909a6a149"
+    },
+    "evidence/competition/gpu-setup-20261101/.amd-venv/preserve-torch.txt": {
+      "bytes": 25,
+      "sha256": "3292a342a111928579df59ced4e59015f65f18b6e5a3001b583c0a33ff9ebb43"
+    },
+    "evidence/competition/gpu-setup-20261101/.amd-venv/visionforge-owned.json": {
+      "bytes": 212,
+      "sha256": "7a5000815d5a044c77360f4efff8fdcacc8a8c2929e333694ef5fc25b0280261"
+    },
+    "evidence/competition/gpu-setup-20261101/evidence/competition/notebook-acceptance.json": {
+      "bytes": 14313,
+      "sha256": "ba08bd43917ba3108e9005e4c1da13f68876c6a2cee15986269343d95e032a1d"
+    },
+    "evidence/competition/gpu-setup-20261101/notebook-setup-final.log": {
+      "bytes": 16074,
+      "sha256": "0712bc96bb9556b91854291c00845c526c64744e64879b355f43c86ab864b005"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/evidence/inference.jsonl": {
+      "bytes": 5048,
+      "sha256": "358622f9fb9c3b78edbe2a9cc0b182d73ec4f72f4b89069f5de871b0c30d077c"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/evidence/sampler-status.json": {
+      "bytes": 49,
+      "sha256": "ded9197b51a48b49ff20e0e02b1161d43d12316a4ed2292f6eb2ce24f399648e"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/evidence/stop-sampling": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/evidence/telemetry-ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/evidence/vram-samples.jsonl": {
+      "bytes": 684,
+      "sha256": "5cc860cb99c5b0bd25c7c4f05dde2ec6ec73da68c54efa5b4a0f433a6099c02a"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/advisory_output.json": {
+      "bytes": 14,
+      "sha256": "6c2a6492384756b8ecf45849c76b2dd0e38ec61810c9272d7cecf5bb33e7d701"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/chinese_clean_output.json": {
+      "bytes": 23,
+      "sha256": "b3cfa643255a2aff57b2beeda96b099f3a237b7def1efeaeba7666f10e5d0e1d"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/chinese_glare_output.json": {
+      "bytes": 23,
+      "sha256": "63a28b66f324dee7860cffdca7f5a0893e2780b3b0cb4686df94c0ec26ef8cbc"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/speed_output.json": {
+      "bytes": 26,
+      "sha256": "2faaabc6e0d1380d62a3e346f7f466fccad7286f87fb45767d5652d4b6281bba"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/stop_clean_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/stop_noise_output.json": {
+      "bytes": 16,
+      "sha256": "ecbc7b1e1f26a70fcee20b492e81e871e60cb76427a0dc30c480f88692880506"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/us_angled_output.json": {
+      "bytes": 19,
+      "sha256": "24ff406314f505bdce22e8039504421328eb9b40676db14c8b1bc3e377dce34d"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/us_blur_output.json": {
+      "bytes": 19,
+      "sha256": "c8873ac800db275cc89f5a2e854f7d66402bc5234ffba404389727468b5e7969"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/us_clean_output.json": {
+      "bytes": 19,
+      "sha256": "dd2c04a06ab15ad9c4fbbdca7d9f91d954305c1e761689cbeb17a4efc5c7ae78"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/output/warning_output.json": {
+      "bytes": 29,
+      "sha256": "0864d7fb7b9a371f65a043366dc66a990d7f743b0f0954a6e10fb61941fae202"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/sampler.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/competition/gpu-setup-20261101/runs/65e02d10b8/worker.log": {
+      "bytes": 1164,
+      "sha256": "06a57e05907d13b0aed1d3eb729f76530016a3436b1f31047ab398b2f7bbc60a"
+    },
+    "evidence/competition/image-verification-20261101.log": {
+      "bytes": 9330,
+      "sha256": "0d64fb3d5effa6b45203851e679ea4d60ec9e6f21ec68aee8092789a6949c9d8"
+    },
+    "evidence/competition/image-verification.json": {
+      "bytes": 8221,
+      "sha256": "26e6bdcca2314c33389490cf095c95f03faade7b98451772d6030a47980c1428"
+    },
+    "evidence/competition/local-acceptance-20261101.json": {
+      "bytes": 4804,
+      "sha256": "d1707b74b005d673b5ba1fbad72157f1436e4f68b11c8d8ce45f7ec183306884"
+    },
+    "evidence/competition/local-acceptance.json": {
+      "bytes": 2380,
+      "sha256": "66c1f25097a4bd306bdda9326bf6cf8a7ef91a8d1a65db13b9ab30dc9710bed6"
+    },
+    "evidence/competition/local-validation-20261101.log": {
+      "bytes": 2789,
+      "sha256": "472c751434962a8028c222a4045ef865b746c2f045025dc3e0c03925af93db53"
+    },
+    "evidence/competition/packet-check-20261101.txt": {
+      "bytes": 393,
+      "sha256": "73c5612a0ade8cf181bd17efc114912db8d79f27a7cb372badfe1ec22858c266"
+    },
+    "evidence/competition/packet-check.txt": {
+      "bytes": 695,
+      "sha256": "463e5f182def8c022ad0e090ad649a1b2ee54107de4434ec072c06cbfbee3c84"
+    },
+    "evidence/competition/packet-tested-core-20261101.json": {
+      "bytes": 4266,
+      "sha256": "b3d06cf63fcbbfeae7aa795649ff86bc4404ba5c7dd2261f89e6f59381fc94d9"
+    },
+    "evidence/competition/preflight.json": {
+      "bytes": 7286,
+      "sha256": "3a9319db6e7368a46c173ba902d69ab072ded28546eb0cbe060ad33788afd3b1"
+    },
+    "evidence/competition/readiness.md": {
+      "bytes": 20576,
+      "sha256": "f3217ca6e67c3ffc57c315b795f7e5ee2ddc498347e0f3d6d06ceff8eb8e02fe"
+    },
+    "evidence/competition/regression-tests-20261101.txt": {
+      "bytes": 578,
+      "sha256": "f65127a8cf89dd863619278cf607af183ed4d2aae880311971f51b2c6e9f11a6"
+    },
+    "evidence/competition/regression-tests.txt": {
+      "bytes": 578,
+      "sha256": "b5f473da23f8e6c383f6da6323d4797e7d50654806ee866b2a4d9115d854aab3"
+    },
+    "evidence/competition/release-status-20261101.json": {
+      "bytes": 12620,
+      "sha256": "ec431cb733435482b235203e3bcaad91e4ee7c496ed61af5b3a6b70fe637dcdc"
+    },
+    "evidence/competition/review.md": {
+      "bytes": 6416,
+      "sha256": "413e213a05372586b749cc0176c2ae83965005d855b5974ddb4db60074c8ae63"
+    },
+    "evidence/competition/tested-source-20261101.json": {
+      "bytes": 3653,
+      "sha256": "15efdd4aee601894ae31406d8998b83a41e9393c94d9527cfe5b03cfcfe3a0c9"
+    },
+    "evidence/competition/upload-preparation-20261101.json": {
+      "bytes": 996,
+      "sha256": "4d0eb8384c88df0f72754567a34e923d9d6e45e7c6a3443a27aa5345de17403f"
+    },
+    "evidence/competition/upload-tests-20261101.txt": {
+      "bytes": 101,
+      "sha256": "d53f4c624295e9eb54c0dc352e04606190f2688322d6de916a98ea0bc4afda83"
+    },
+    "scripts/package_competition.py": {
+      "bytes": 4987,
+      "sha256": "873bf6bc3c6d647218d617a66df765a6f247fd9533d56cde805f3aa11498fc86"
+    },
+    "scripts/prepare_submission.py": {
+      "bytes": 12102,
+      "sha256": "3ffa5c52199db46f3536d293012cbe6e3efea48a3c05d0322930d90844040943"
+    },
+    "scripts/submission_upload.py": {
+      "bytes": 10629,
+      "sha256": "bd43458a120299ac387e721b2e07a03c2df173863bc78a25eecd0d3e996aaf78"
+    },
+    "scripts/verify_competition_image.py": {
+      "bytes": 6294,
+      "sha256": "cd5326ba58e0d0a915890971900903dfad7903044a73ac7044d62d52df666a87"
+    },
+    "tests/competition/test_contract.py": {
+      "bytes": 11499,
+      "sha256": "f9a8c6a99995e72dda56c3eb4ab1d6c9f5d5a0052e69eab6c9f1308a437afcff"
+    },
+    "tests/submission/test_upload.py": {
+      "bytes": 7159,
+      "sha256": "f3e3b20bb8a264a05739cbc64f2805e15c6b94aaebc73a20c4a73e0805b78708"
+    }
+  }
+}

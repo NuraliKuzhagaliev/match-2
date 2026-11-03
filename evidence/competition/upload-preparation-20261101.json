@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-31T23:41:38.377277+00:00",
+  "preparation_status": "READY_FOR_USER_UPLOAD",
+  "image_id": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+  "source_of_lifecycle_contract": "User PDF pages5-6; brief-contract-20261101.json",
+  "paid_host_required_for_upload": false,
+  "publisher_tests": {
+    "passed": 13,
+    "kind": "fake Docker protocol; not an actual push"
+  },
+  "full_regression": 72,
+  "public_image_reference_in_public_source": false,
+  "private_bundle_location": "output/amd-match2-upload",
+  "actual_publication": "NOT_RUN",
+  "submission_image_anonymous_pull": "NOT_RUN",
+  "actual_amd_container_inference": "NOT_RUN",
+  "remaining_user_actions": [
+    "Run the private upload command, which performs push and anonymous checks",
+    "Paste the generated digest reference into the challenge submission form"
+  ],
+  "independent_review": "Publisher retry and premature reference findings fixed and re-reviewed"
+}

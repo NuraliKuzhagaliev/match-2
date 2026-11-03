@@ -1,0 +1,61 @@
+{
+  "check": "visionforge_environment_only",
+  "python": "3.14.4",
+  "uid": 0,
+  "amd_devices": {
+    "kfd": true,
+    "dri": true
+  },
+  "disk": {
+    "/workspace": {
+      "free_gib": 7.47,
+      "total_gib": 25.0
+    },
+    "/": {
+      "free_gib": 1532.94,
+      "total_gib": 3519.75
+    }
+  },
+  "tools": {
+    "docker": null,
+    "podman": null,
+    "buildah": null,
+    "buildctl": null,
+    "crane": null,
+    "skopeo": null
+  },
+  "docker_socket": false,
+  "packages": {
+    "torch": "2.13.0+rocm10.0.0",
+    "torchvision": "0.28.0+rocm10.0.0",
+    "transformers": null,
+    "accelerate": null,
+    "huggingface-hub": null,
+    "safetensors": null,
+    "Pillow": "12.3.0"
+  },
+  "hip": "7.15.26333",
+  "gpu_available": true,
+  "gpu": "AMD Radeon Pro W7900D",
+  "gpu_total_gib": 47.98,
+  "gpu_compute": {
+    "device": "cuda:0",
+    "value": 32.0,
+    "pass": true
+  },
+  "docker_info": {
+    "status": "CLI_NOT_INSTALLED"
+  },
+  "build_prerequisites": {
+    "cap_sys_admin": false,
+    "cap_net_admin": false,
+    "cap_mknod": false,
+    "unshare_cli": true,
+    "user_namespace_probe": {
+      "exit_code": 1,
+      "stderr": "unshare: unshare failed: Operation not permitted"
+    }
+  },
+  "gpu_check_status": "PASS",
+  "docker_build_status": "BLOCKED_NO_DOCKER_CLI_OR_SOCKET"
+}

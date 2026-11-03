@@ -1,0 +1,1 @@
+{"torch": "2.13.0+rocm10.0.0", "torch_file": "/opt/venv/lib/python3.14/site-packages/torch/__init__.py", "hip": "7.15.26333", "gpu": "AMD Radeon Pro W7900D", "base_site": "/opt/venv/lib/python3.14/site-packages"}

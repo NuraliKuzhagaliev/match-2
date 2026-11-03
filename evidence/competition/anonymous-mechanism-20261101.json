@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "probe_kind": "anonymous_manifest_of_public_mandatory_base_only",
+  "reference": "rocm/pytorch@sha256:3174cb7061d94c427da96c0edef4adea28046fa3f3b2ff3948dc4e995665ff8c",
+  "layers": 11,
+  "submission_image_uploaded": false,
+  "submission_image_anonymous_pull": "NOT_RUN",
+  "anonymous_configuration": "empty Hub auth entry; no credential helper; env auth removed",
+  "local_daemon_endpoint": "npipe:////./pipe/dockerDesktopLinuxEngine"
+}

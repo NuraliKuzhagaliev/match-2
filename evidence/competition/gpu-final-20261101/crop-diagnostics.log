@@ -1,0 +1,19 @@
+/workspace/visionforge-match2/.venv/lib/python3.14/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"file": "us_clean.png", "expected": "8MQZ204", "actual": "8MQZ204", "match": true, "seconds": 2.73507621511817, "original_size": [820, 350], "crop_size": [820, 350]}
+{"file": "us_angled.jpg", "expected": "7LPN684", "actual": "7LPN684", "match": true, "seconds": 0.2234166283160448, "original_size": [820, 350], "crop_size": [820, 350]}
+{"file": "chinese_clean.png", "expected": "\u7ca4C\u00b760983", "actual": "\u7ca4C\u00b760983", "match": true, "seconds": 0.24863914586603642, "original_size": [820, 250], "crop_size": [820, 250]}
+{"file": "chinese_glare.jpg", "expected": "\u6d59D\u00b760609", "actual": "\u6d59D\u00b760609", "match": true, "seconds": 0.24367491155862808, "original_size": [820, 250], "crop_size": [820, 250]}
+{"file": "stop_clean.png", "expected": "STOP", "actual": "STOP", "match": true, "seconds": 0.28628628700971603, "original_size": [600, 600], "crop_size": [319, 111]}
+{"file": "stop_noise.tiff", "expected": "STOP", "actual": "STOP", "match": true, "seconds": 0.17678210511803627, "original_size": [600, 600], "crop_size": [319, 111]}
+{"file": "speed.jpg", "expected": "SPEED LIMIT 45", "actual": "SPEED LIMIT 45", "match": true, "seconds": 0.4673285000026226, "original_size": [650, 850], "crop_size": [394, 557]}
+{"file": "warning.png", "expected": "LANE CLOSED AHEAD", "actual": "LANE CLOSED AHEAD", "match": true, "seconds": 0.3927638567984104, "original_size": [800, 800], "crop_size": [357, 306]}
+{"file": "advisory.tiff", "expected": "25", "actual": "25", "match": true, "seconds": 0.14657875709235668, "original_size": [520, 520], "crop_size": [253, 184]}
+{"file": "us_blur.png", "expected": "4VNK708", "actual": "4VNK708", "match": true, "seconds": 0.22372735105454922, "original_size": [820, 350], "crop_size": [820, 350]}
+{"file": "../../runs/diagnostic-sign-0.png", "expected": "ROAD WORK AHEAD", "actual": "ROAD WORK AHEAD", "match": true, "seconds": 0.33968985453248024, "original_size": [800, 800], "crop_size": [267, 349]}
+{"file": "../../runs/diagnostic-sign-1.png", "expected": "KEEP RIGHT", "actual": "KEEP RIGHT", "match": true, "seconds": 0.1739553827792406, "original_size": [800, 800], "crop_size": [237, 219]}
+{"file": "../../runs/diagnostic-sign-2.png", "expected": "BRIDGE MAY BE ICY", "actual": "BRIDGE MAY BE ICY", "match": true, "seconds": 0.3118631187826395, "original_size": [800, 800], "crop_size": [277, 350]}
+{"file": "../../runs/diagnostic-sign-3.png", "expected": "DO NOT ENTER", "actual": "DO NOT ENTER", "match": true, "seconds": 0.21905885078012943, "original_size": [800, 800], "crop_size": [293, 219]}
+{"file": "../../runs/diagnostic-sign-4.png", "expected": "YIELD", "actual": "YIELD", "match": true, "seconds": 0.1694323755800724, "original_size": [800, 800], "crop_size": [227, 88]}
+{"file": "../../runs/diagnostic-sign-5.png", "expected": "MAXIMUM HEIGHT 4.2 M", "actual": "MAXIMUM HEIGHT 4.2 M", "match": true, "seconds": 0.315492682158947, "original_size": [800, 800], "crop_size": [364, 348]}

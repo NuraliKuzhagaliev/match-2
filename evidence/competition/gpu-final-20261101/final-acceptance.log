@@ -1,0 +1,105 @@
+{"event": "case", "file": "us_clean.png", "expected": "8MQZ204", "input_sha256": "958238c2c15bc07caa727f4ad3327d22e5a4475237dfc17f44e2dd29c00749b4", "seconds": 0.28932148730382323, "exit_code": 0, "output": {"text": "8MQZ204"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "us_angled.jpg", "expected": "7LPN684", "input_sha256": "3dbf82c26b184e8dd599ff987920ba750e6262db48b63611c71e45fadf2d1836", "seconds": 0.27593562472611666, "exit_code": 0, "output": {"text": "7LPN684"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "chinese_clean.png", "expected": "\u7ca4C\u00b760983", "input_sha256": "330ae7bcfbdd3c8f26cabc2adf0e1fdc56f222253045d5c1b7f09a04395d10d6", "seconds": 0.314877700060606, "exit_code": 0, "output": {"text": "\u7ca4C\u00b760983"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "chinese_glare.jpg", "expected": "\u6d59D\u00b760609", "input_sha256": "e8f965a50ca304648694b533e231053775db41588c2d4adbb7220c829e640203", "seconds": 0.2893899963237345, "exit_code": 0, "output": {"text": "\u6d59D\u00b760609"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "stop_clean.png", "expected": "STOP", "input_sha256": "41ebbb41256a722164e8a4d72d1b5d8c341d52de5f1c458ca967721bd9dcad12", "seconds": 0.34077275078743696, "exit_code": 0, "output": {"text": "STOP"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "stop_noise.tiff", "expected": "STOP", "input_sha256": "be73f2815d4b2fe46c4aa886b8dd69a318762d2f7d5513182899c7059ddbcd20", "seconds": 0.3341375379823148, "exit_code": 0, "output": {"text": "STOP"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "speed.jpg", "expected": "SPEED LIMIT 45", "input_sha256": "9cc98a24c02dc6e45e7372785044ca428ed549f36a366e84a3061cd282fe0d6a", "seconds": 0.6558130979537964, "exit_code": 0, "output": {"text": "SPEED LIMIT 45"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "warning.png", "expected": "LANE CLOSED AHEAD", "input_sha256": "3513e3ccc8a0fbd1787a070b47c12af1e9b3ae6bc50b6c3ea8afe38422f8252d", "seconds": 0.6227303091436625, "exit_code": 0, "output": {"text": "LANE CLOSED AHEAD"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "advisory.tiff", "expected": "25", "input_sha256": "8dab8cbca2633ad84c5393fae955bbf2652693f946454e76c0207be947448eb7", "seconds": 0.2551786662079394, "exit_code": 0, "output": {"text": "25"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{"event": "case", "file": "us_blur.png", "expected": "4VNK708", "input_sha256": "f3d898107fa915d164932ef46740dea4e62983b49627a2ff520f90290abaec31", "seconds": 0.2752275476232171, "exit_code": 0, "output": {"text": "4VNK708"}, "contract_pass": true, "time_pass": true, "text_match": true, "stderr": ""}
+{
+  "decision": "direct_runtime_passed_container_unverified",
+  "gates": [
+    {
+      "id": "docker_build_layers_size",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "startup",
+      "status": "PASS",
+      "detail": 24.009299705270678
+    },
+    {
+      "id": "rocm_runtime",
+      "status": "PASS",
+      "detail": {
+        "ok": true,
+        "request_id": "ba922fa291764808bb751b46178a1832",
+        "ready": true,
+        "backend": "rocm",
+        "hip_version": "7.15.26333",
+        "torch_version": "2.13.0+rocm10.0.0",
+        "gpu": "AMD Radeon Pro W7900D",
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "weight_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+        "parameter_bytes": 4255064064,
+        "dtype": "float16",
+        "attention": "sdpa",
+        "preprocessing": "full-scene-plus-optional-contrast-view",
+        "memory": {
+          "allocated_bytes": 4334771712,
+          "reserved_bytes": 4448059392,
+          "driver_used_bytes": 4979163136,
+          "device_total_bytes": 51522830336,
+          "max_allocated_bytes": 4395478016,
+          "max_reserved_bytes": 4448059392
+        },
+        "model_loads": 1,
+        "startup_seconds": 23.158269067294896,
+        "pid": 98,
+        "ready_monotonic_seconds": 4107760.326385638,
+        "checked_monotonic_seconds": 4107761.101704225
+      }
+    },
+    {
+      "id": "independent_sampler_started",
+      "status": "PASS",
+      "detail": "Separate ROCm sampler must be ready and alive"
+    },
+    {
+      "id": "single_model_load",
+      "status": "PASS",
+      "detail": 98
+    },
+    {
+      "id": "output_contract",
+      "status": "PASS",
+      "detail": "Ten CLI calls with actual model outputs"
+    },
+    {
+      "id": "per_image_runtime",
+      "status": "PASS",
+      "detail": "Whole CLI <=30 seconds"
+    },
+    {
+      "id": "total_runtime",
+      "status": "PASS",
+      "detail": 3.664041928946972
+    },
+    {
+      "id": "local_exact_match",
+      "status": "PASS",
+      "detail": "Synthetic local regression; not hidden contest accuracy"
+    },
+    {
+      "id": "independent_sampler_coverage",
+      "status": "PASS",
+      "detail": {
+        "exit_code": 0,
+        "status": {
+          "status": "COMPLETE",
+          "pid": 97,
+          "samples": 9
+        }
+      }
+    },
+    {
+      "id": "vram",
+      "status": "PASS",
+      "detail": 5149032448
+    }
+  ],
+  "report": "evidence/competition/notebook-acceptance-final.json"
+}

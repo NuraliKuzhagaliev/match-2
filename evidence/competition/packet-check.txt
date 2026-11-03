@@ -1,0 +1,15 @@
+2026-10-28 — extracted source packet, D:/projects/VisionForgeAI/tmp/amd-package-check
+Interpreter: existing D:/projects/VisionForgeAI/.venv/Scripts/python.exe; imports resolved from extracted packet CWD.
+
+python -m pytest -q tests/competition
+........................                                                 [100%]
+24 passed in 0.36s
+
+python -m compileall -q competition scripts/package_competition.py
+PASS, exit 0.
+
+Git Bash --noprofile --norc -n competition/check.sh
+PASS, exit 0. Syntax check only; no Docker/AMD run.
+
+Packager verified ZIP CRC and SHA-256 of every payload against SOURCE-MANIFEST.json.
+No weights, environment files, credentials or local CPU studio were included.

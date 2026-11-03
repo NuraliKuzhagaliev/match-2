@@ -1,0 +1,70 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.92kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0@sha256:3174cb7061d94c427da96c0edef4adea28046fa3f3b2ff3948dc4e995665ff8c
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context:
+#3 transferring context: 292B done
+#3 DONE 0.2s
+
+#4 [1/9] FROM docker.io/rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0@sha256:3174cb7061d94c427da96c0edef4adea28046fa3f3b2ff3948dc4e995665ff8c
+#4 resolve docker.io/rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0@sha256:3174cb7061d94c427da96c0edef4adea28046fa3f3b2ff3948dc4e995665ff8c 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 63.93kB 4.1s done
+#5 DONE 4.2s
+
+#6 [2/9] WORKDIR /app
+#6 CACHED
+
+#7 [3/9] COPY competition/requirements.txt /app/requirements.txt
+#7 CACHED
+
+#8 [4/9] COPY competition/constraints.txt /app/constraints.txt
+#8 CACHED
+
+#9 [5/9] RUN python3 -c "import torch; assert torch.version.hip and torch.__version__.startswith('2.13.0'), 'Wrong base torch build'"     && python3 -m pip install --no-cache-dir --no-deps --index-url https://stable.repo.amd.com/rocm/whl-next/ 'torchvision==0.28.0+rocm10.0.0'     && python3 -m pip install --no-cache-dir -r /app/requirements.txt -c /app/constraints.txt     && python3 -m pip check     && python3 -c "import torch; assert torch.version.hip and torch.__version__.startswith('2.13.0'), 'ROCm torch was replaced'"     && python3 -m pip freeze > /app/installed-requirements.txt
+#9 CACHED
+
+#10 [6/9] COPY competition/__init__.py competition/contract.py competition/download_model.py competition/processor.py competition/model-spec.json /app/competition/
+#10 DONE 3.0s
+
+#11 [7/9] RUN python3 -m competition.download_model /models/qwen3-vl-2b     && python3 -m competition.processor /models/qwen3-vl-2b > /app/processor-check.json     && mkdir -p /app/input /app/output /app/evidence /run/visionforge
+#11 1.315 
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]
+Fetching 10 files:  80%|████████  | 8/10 [00:01<00:00,  5.98it/s]
+Fetching 10 files:  90%|█████████ | 9/10 [00:19<00:02,  2.22s/it]
+Fetching 10 files: 100%|██████████| 10/10 [02:06<00:00, 12.63s/it]
+Fetching 10 files: 100%|██████████| 10/10 [02:06<00:00, 12.63s/it]
+#11 144.2 {"model": "Qwen/Qwen3-VL-2B-Instruct", "revision": "89644892e4d85e24eaac8bacfd4f463576704203", "weight_sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0"}
+#11 DONE 153.9s
+
+#12 [8/9] COPY competition/*.py /app/competition/
+#12 DONE 0.2s
+
+#13 [9/9] COPY competition/app.py /app/app.py
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 114.8s done
+#14 exporting manifest sha256:18ad43b160c2736387b231a0a2500695a8fbbfdc75c6c8788af102393db7ee5f 0.0s done
+#14 exporting config sha256:2801ccb695f20850794c89865e4b9c4523eae6146c61018a78f03415775a3d6b 0.0s done
+#14 exporting attestation manifest sha256:bbde1261b3b30ba1dc218e1747af84eb03bfbd6912428936fd716b49c3109586 0.0s done
+#14 exporting manifest list sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420 0.0s done
+#14 naming to docker.io/library/visionforge-amd:local
+#14 naming to docker.io/library/visionforge-amd:local 0.0s done
+#14 unpacking to docker.io/library/visionforge-amd:local
+#14 unpacking to docker.io/library/visionforge-amd:local 199.3s done
+#14 naming to docker.io/library/visionforge-amd:release-20261101 done
+#14 unpacking to docker.io/library/visionforge-amd:release-20261101 0.0s done
+#14 DONE 314.4s
+
+ 1 warning found (use docker --debug to expand):
+ - SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ENV "HF_HUB_DISABLE_IMPLICIT_TOKEN") (line 4)

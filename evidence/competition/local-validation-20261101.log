@@ -1,0 +1,104 @@
+{
+  "decision": "not_ready",
+  "gates": [
+    {
+      "id": "case_manifest",
+      "mandatory": true,
+      "status": "PASS",
+      "detail": "Ten exact-ground-truth cases; synthetic validation is not hidden scoring"
+    },
+    {
+      "id": "docker_daemon",
+      "mandatory": true,
+      "status": "PASS",
+      "detail": "Docker daemon answered"
+    },
+    {
+      "id": "container_images",
+      "mandatory": true,
+      "status": "PASS",
+      "detail": "Both the pinned base and candidate image are locally inspectable"
+    },
+    {
+      "id": "base_layer_identity",
+      "mandatory": true,
+      "status": "PASS",
+      "detail": "Compared actual RootFS diff-ID prefix, not the image name/label"
+    },
+    {
+      "id": "uncompressed_size",
+      "mandatory": true,
+      "status": "PASS",
+      "detail": {
+        "bytes": 59680730554,
+        "maximum": 64424509440
+      }
+    },
+    {
+      "id": "amd_devices",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "detail": "Run this validation on the Linux AMD host with /dev/kfd and /dev/dri"
+    },
+    {
+      "id": "startup",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "rocm_inference_runtime",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "independent_sampler_started",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "independent_sampler_coverage",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "vram",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "single_model_load",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "output_contract",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "per_image_runtime",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "total_runtime",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    },
+    {
+      "id": "local_exact_match",
+      "mandatory": true,
+      "status": "NOT_RUN",
+      "detail": "Requires the preceding prerequisites to pass"
+    }
+  ]
+}

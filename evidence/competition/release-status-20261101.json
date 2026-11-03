@@ -1,0 +1,319 @@
+{
+  "checked_at": "2026-10-31T22:59:13.178166+00:00",
+  "decision": "not_ready",
+  "submission_ready": false,
+  "source_set_sha256": "0fa87e2b63ac61da5b7073b4366d7e30aa103f1ca4a41a0cb15c2249172872aa",
+  "image_id": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+  "local_tags": [
+    "visionforge-amd:local",
+    "visionforge-amd:release-20261101"
+  ],
+  "docker": {
+    "version": "29.8.0",
+    "driver_status": [
+      [
+        "driver-type",
+        "io.containerd.snapshotter.v1"
+      ]
+    ]
+  },
+  "size_method": "Docker inspect Size; containerd content+unpacked total is a conservative upper bound for unpacked size",
+  "docker_inspect_size_bytes": 59680730554,
+  "gates": [
+    {
+      "id": "regression",
+      "requirement": "Project and competition regressions",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Windows/Python 3.13",
+      "method": "72 pytest tests: original59 plus13 publisher protocol tests; one known Starlette/httpx deprecation",
+      "status": "PASS",
+      "evidence_ids": [
+        "regression-tests-20261101.txt"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "direct_rocm",
+      "requirement": "Real ROCm OCR, startup/CLI/VRAM/output contract",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "AMD Radeon Pro W7900D, provider ROCm",
+      "method": "10 CLI images, 7 additional synthetic cases, independent three-second sampling",
+      "status": "PASS",
+      "evidence_ids": [
+        "gpu-release-20261101/evidence/competition/notebook-acceptance-release.json",
+        "gpu-release-20261101/evidence/competition/additional-final.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "notebook_setup",
+      "requirement": "Isolated reproducible environment retaining ROCm Torch",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "AMD contest Jupyter",
+      "method": "New .amd-venv, pinned dependencies, existing pinned weights, real 10-case rerun",
+      "status": "PASS",
+      "evidence_ids": [
+        "gpu-setup-20261101/notebook-setup-final.log",
+        "gpu-setup-20261101/evidence/competition/notebook-acceptance.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "docker_build",
+      "requirement": "Container built on exact pinned ROCm base",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Docker Desktop 29.8.0 Linux/amd64",
+      "method": "docker build exit 0; pinned mandatory FROM",
+      "status": "PASS",
+      "evidence_ids": [
+        "docker-build-release-20261101.txt"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "image_size_accounting_version",
+      "requirement": "image_size_accounting_version",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "base_layer_identity",
+      "requirement": "base_layer_identity",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "uncompressed_size",
+      "requirement": "uncompressed_size",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "gpu_tested_source_identity",
+      "requirement": "gpu_tested_source_identity",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "gpu_tested_model_configuration_identity",
+      "requirement": "gpu_tested_model_configuration_identity",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "cli_entrypoint_identity",
+      "requirement": "cli_entrypoint_identity",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "weight_identity",
+      "requirement": "weight_identity",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "processor_build_check",
+      "requirement": "processor_build_check",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "offline_processor_runtime",
+      "requirement": "offline_processor_runtime",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "no_gpu_fails_closed",
+      "requirement": "no_gpu_fails_closed",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Local Docker 29.8; no AMD devices",
+      "method": "Actual image/container inspection and offline probes",
+      "status": "PASS",
+      "evidence_ids": [
+        "image-verification.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "amd_container_inference",
+      "requirement": "GPU inference in the actual built image",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Required: Linux AMD Docker host",
+      "method": "Current Jupyter has no Docker/socket/required privileges; local Windows host has no AMD devices",
+      "status": "BLOCKED",
+      "evidence_ids": [
+        "local-acceptance-20261101.json",
+        "amd-environment-20261030.json"
+      ],
+      "owner": "User-provided AMD Docker host",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "organizer_harness",
+      "requirement": "Persistent stock CMD and same container for ten CLI calls",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "User-provided brief, pages 5-6",
+      "method": "Contract review: already-running container and one model load; actual organizer grader not executed",
+      "status": "PASS",
+      "evidence_ids": [
+        "brief-contract-20261101.json"
+      ],
+      "owner": "Codex document review",
+      "checked_at": "2026-10-31T23:36:59.051685+00:00",
+      "exception": null
+    },
+    {
+      "id": "public_registry_pull",
+      "requirement": "Public registry destination and verified anonymous pull by digest",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "External registry and clean pull host",
+      "method": "User push plus isolated anonymous manifest and pull checks are prepared; actual competition publication is NOT_RUN",
+      "status": "NOT_RUN",
+      "evidence_ids": [
+        "readiness.md"
+      ],
+      "owner": "User executes prepared upload kit",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "hidden_accuracy",
+      "requirement": "Accuracy on unseen contest photographs",
+      "mandatory": false,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Hidden organizer dataset",
+      "method": "Only own synthetic fixtures measured",
+      "status": "NOT_RUN",
+      "evidence_ids": [
+        "readiness.md"
+      ],
+      "owner": "Organizer evaluation",
+      "checked_at": "2026-10-31T22:59:13.178166+00:00",
+      "exception": null
+    },
+    {
+      "id": "source_packet_portability",
+      "requirement": "Portable source packet and tested code/fixture identity",
+      "mandatory": true,
+      "target_revision": "sha256:e563af90646f6e8ed4b71537d4f710036d972e87d65a68d872f452ccb5655420",
+      "environment": "Windows Python 3.13; Linux bash syntax check",
+      "method": "Rechecked after upload-tool preparation; tested code/fixture fingerprint recorded in packet-tested-core-20261101.json",
+      "status": "PASS",
+      "evidence_ids": [
+        "packet-check-20261101.txt",
+        "packet-tested-core-20261101.json"
+      ],
+      "owner": "Codex",
+      "checked_at": "2026-10-31T23:03:33.575251+00:00",
+      "exception": null
+    }
+  ],
+  "preparation_status": "READY_FOR_USER_UPLOAD",
+  "paid_gpu_host_required_for_submission": false,
+  "remaining_user_actions": [
+    "Run the private upload command, which performs push and anonymous checks",
+    "Paste the generated digest reference into the challenge submission form"
+  ]
+}

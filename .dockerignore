@@ -1,0 +1,9 @@
+# Allow-list only submission code. No private images, env files, tokens or studio data.
+**
+!.dockerignore
+!competition/
+!competition/Dockerfile
+!competition/*.py
+!competition/requirements.txt
+!competition/constraints.txt
+!competition/model-spec.json
